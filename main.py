@@ -31,5 +31,5 @@ for thread in threads:
 print(f"Found {len(tid)} comments")
 
 with open(file_name, "w") as f:
-    f.write("\n".join(tid))
+    f.write("\n".join(sorted(tid)))
 print(f"Comments saved in {file_name}")
