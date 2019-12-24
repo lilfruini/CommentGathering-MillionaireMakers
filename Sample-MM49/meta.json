@@ -1,0 +1,26 @@
+{
+    "threads": [
+        {
+            "link": "https://reddit.com/r/millionairemakers/comments/edhj2m/not_only_is_it_about_to_be_christmas_but_today/",
+            "length": 99064,
+            "trunc_length": 96312
+        },
+        {
+            "link": "https://reddit.com/r/millionairemakers/comments/edq7ov/apparently_users_came_by_so_fast_that_reddits_hug/",
+            "length": 87526,
+            "trunc_length": 79992
+        }
+    ],
+    "CID_Filename": "OfficialMM49IDs.txt",
+    "Dateline": 1575158400,
+    "Concurrent_Threads": 50,
+    "Duplicate Action": "FirstOnly",
+	"Win_Hash": "0000000000000000000b79e69d8d837f1361e2390fbcb38ba4f671e3bbda23bc",
+    "CID_SHA256": "381f307803c83447b71e245bba1ef800e0472ab1ea901151e00970e5606ef350",
+	"AUID_SHA256": "PretendThisIsActuallyHereDidntThinkToAddTillAfterIWasDoneLol",
+    "Total Participants": 176304,
+    "Winner_Number": 116029,
+    "Winner_ID": "fbkb9pu",
+    "Winner_Link": "https://reddit.com/r/millionairemakers/comments/edq7ov/apparently_users_came_by_so_fast_that_reddits_hug/fbkb9pu",
+    "Winner": "DaShmooZoo"
+}
