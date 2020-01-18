@@ -5,7 +5,7 @@ import time
 def get_dupes(a):
     a = a.copy()
     a.sort()
-    dupes = {'Null', 'NULL-ERR'}
+    dupes = {'Null', 'NULL*'}
     last_item = ""
     for item in a:
         if last_item == item:
@@ -28,7 +28,7 @@ def remove_dupes(authors=None, dqed=None, cids=None, mode="DQ", meta=None):
         exit(1)
 
     rm_list = []
-    rm_cache = {'Null', 'NULL-ERR'}
+    rm_cache = {'Null', 'NULL*'}
     for author in authors:
         if author in dqed:
             if mode == "DQ" or author in rm_cache:
@@ -79,6 +79,9 @@ def main():
     before = len(comment_ids)
     comment_ids = remove_dupes(authors=authors, dqed=set(dqed), cids=comment_ids, mode=mode, meta=meta)
     after = len(comment_ids)
+
+    with open(file_name.rstrip('.txt') + '_DQed.txt', 'w') as f:
+        f.write('\n'.join(sorted(dqed, key=str.casefold)))
 
     with open(file_name.rstrip('.txt') + '_Truncated.txt', 'w') as f:
         f.write('\n'.join(comment_ids))

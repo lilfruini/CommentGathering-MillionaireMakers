@@ -21,7 +21,7 @@ class AuthorThread(threading.Thread):
             try:
                 self.authors.append('Null' if author is None or author.created_utc > self.dateline else author.name)
             except:
-                self.authors.append('NULL-ERR')
+                self.authors.append('NULL*')
             self.i += 1
 
 
