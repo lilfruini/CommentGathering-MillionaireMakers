@@ -18,7 +18,7 @@ def init_reddit():
 
 def find_winner_thread(meta, winner_no):
     for thread in meta['threads']:
-        winner_no -= thread['trunc_length']
+        winner_no -= thread['trunc_length'] if meta['WinnerFromFile'] == "Truncated" else thread['length']
         if winner_no <= 0:
             return thread['link']
 
@@ -33,8 +33,10 @@ def main():
 
     file_name = meta['CID_Filename']
     win_hash = meta['Win_Hash']
+    if meta['WinnerFromFile'] == "Truncated":
+        file_name = file_name.rstrip('.txt') + '_Truncated.txt'
 
-    with open(file_name.rstrip('.txt') + '_Truncated.txt', 'r') as f:
+    with open(file_name, 'r') as f:
         comment_ids = [line.strip() for line in f]
 
     if win_hash == '':

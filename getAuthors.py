@@ -3,6 +3,7 @@ from praw.models import Comment
 import json
 import time
 import threading
+import hashlib
 
 
 class AuthorThread(threading.Thread):
@@ -37,7 +38,7 @@ def mt_author(t_no=10, reddit=None, cids=None, dateline=None):
         thread.start()
 
     pct_done = 0.0
-    done = 0
+    done = -1
     hang = 0
     while pct_done < 99.1:
         old_done = done
