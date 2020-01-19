@@ -31,30 +31,32 @@ def get_winner_name(reddit=None, url=None, cid=None):
 
 def api_json(link):
     with urllib.request.urlopen(link) as url:
-        return json.loads(url.read().decode())
+        try:
+            return json.loads(url.read().decode())
+        except ValueError:
+            return None
 
 
 def get_win_hash(meta=None):
-    wait_time = meta['DrawTime'] - time.time() if (meta['DrawTime'] - time.time()) > 0 else 0
+    wait_time = meta['DrawTime'] - time.time() + 30 if (meta['DrawTime'] - time.time()) + 30 > 0 else 0
     print("Waiting {:.2f} seconds till draw!".format(wait_time))
     time.sleep(wait_time)
 
-    blocks = api_json("https://api-r.bitcoinchain.com/v1/blocks/100")
+    resp = api_json('https://blockchain.info/blocks/{}000?format=json'.format(meta['DrawTime']))
+
     block0 = 0
-    for block in blocks:
+    for block in resp['blocks']:
         if block['time'] < meta['DrawTime']:
             block0 = block['height']
-            break
-    if block0 == 0:
-        x = input("Error! 0th block not found! Please specify winning hash manually!")
-        exit(1)
+
     win_block = block0 + meta['WaitTillBlock']
 
-    while not (block := api_json('https://api-r.bitcoinchain.com/v1/block/' + str(win_block))):
-        print("Awaiting Block {}....".format(win_block))
+    while not (block := api_json('https://blockchain.info/block-height/{}?format=json'.format(str(win_block)))):
+        print("Awaiting Block {}.... Current Block: {}".format(win_block, api_json('https://blockchain.info/latestblock')['height']))
         time.sleep(10)
 
-    return block[0]['hash']
+    print("Block Time: {} UTC".format(time.strftime('%b %d %Y %H:%M:%S',  time.gmtime(block['blocks'][0]['time']))))
+    return block['blocks'][0]['hash']
 
 
 def main():
@@ -62,16 +64,14 @@ def main():
         meta = json.load(f)
 
     file_name = meta['CID_Filename']
-    win_hash = meta['Win_Hash']
     if meta['WinnerFromFile'] == "Truncated":
         file_name = file_name.rstrip('.txt') + '_Truncated.txt'
 
     with open(file_name, 'r') as f:
         comment_ids = [line.strip() for line in f]
 
-    if win_hash == '':
-        win_hash = get_win_hash(meta)
-        meta['Win_Hash'] = win_hash
+    win_hash = get_win_hash(meta)
+    meta['Win_Hash'] = win_hash
 
     total = (len(comment_ids))
     winner_no = (1 + (int(win_hash, 16) % total))
