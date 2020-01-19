@@ -1,11 +1,10 @@
 import json
-import time
 
 
 def get_dupes(a):
     a = a.copy()
     a.sort()
-    dupes = {'Null', 'NULL*'}
+    dupes = set()
     last_item = ""
     for item in a:
         if last_item == item:
@@ -22,15 +21,18 @@ def remover(rm_list=None, target=None):
             removed += 1
 
 
-def remove_dupes(authors=None, dqed=None, cids=None, mode="DQ", meta=None):
+def remove_dupes(authors=None, dq_age=None, dq_mult=None, cids=None, mode="DQ", meta=None):
     if mode not in {"DQ", "FirstOnly"}:
         x = input("Invalid duplicate action! Only DQ or FirstOnly is acceptable!")
         exit(1)
 
+    dq_age.update({'Null', 'NULL*'})  # Everything in dq_age gets marked for removal
     rm_list = []
-    rm_cache = {'Null', 'NULL*'}
+    rm_cache = set()
     for author in authors:
-        if author in dqed:
+        if author in dq_age:
+            rm_list.append(True)
+        elif author in dq_mult:
             if mode == "DQ" or author in rm_cache:
                 rm_list.append(True)
             else:
@@ -73,15 +75,19 @@ def main():
     with open(file_name.rstrip('.txt') + '_Authors.txt', 'r') as f:
         authors = [line.strip() for line in f]
 
-    dqed = get_dupes(authors)
-    print("{} users have multiple posts!".format(len(dqed)), dqed)
+    with open(file_name.rstrip('.txt') + '_DQ-Age.txt', 'r') as f:
+        dq_age = [line.strip() for line in f]
+
+    dq_mult = get_dupes(authors)
+    print("Operating Mode: " + mode)
+    print("{} users have young accounts!\n{} users have multiple posts!".format(len(dq_age), len(dq_mult)))
 
     before = len(comment_ids)
-    comment_ids = remove_dupes(authors=authors, dqed=set(dqed), cids=comment_ids, mode=mode, meta=meta)
+    comment_ids = remove_dupes(authors=authors, dq_age=set(dq_age), dq_mult=set(dq_mult), cids=comment_ids, mode=mode, meta=meta)
     after = len(comment_ids)
 
-    with open(file_name.rstrip('.txt') + '_DQed.txt', 'w') as f:
-        f.write('\n'.join(sorted(dqed, key=str.casefold)))
+    with open(file_name.rstrip('.txt') + '_DQ-MultiPost.txt', 'w') as f:
+        f.write('\n'.join(sorted(dq_mult, key=str.casefold)))
 
     with open(file_name.rstrip('.txt') + '_Truncated.txt', 'w') as f:
         f.write('\n'.join(comment_ids))

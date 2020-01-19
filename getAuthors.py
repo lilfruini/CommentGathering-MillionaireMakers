@@ -13,44 +13,54 @@ class AuthorThread(threading.Thread):
         self.cids = cids
         self.authors = []
         self.dateline = dateline
-        self.i = 0
+        self.dq_age = set()
 
     def run(self):
         for cid in self.cids:
             author = Comment(self.reddit, id=cid).author
             try:
-                self.authors.append('Null' if author is None or author.created_utc > self.dateline else author.name)
-            except:
+                if author is None:
+                    self.authors.append("Null")
+                    continue
+
+                if author.created_utc > self.dateline:
+                    self.dq_age.add(author.name)
+
+                self.authors.append(author.name)
+            except:  # thread CANNOT crash
                 self.authors.append('NULL*')
-            self.i += 1
 
 
 def mt_author(t_no=10, reddit=None, cids=None, dateline=None):
     total_len = len(cids)
     chunk_len = total_len // t_no + 1
-    cid_chunks = [cids[x:x+chunk_len] for x in range(0, len(cids), chunk_len)]
+    cid_chunks = [cids[x:x + chunk_len] for x in range(0, len(cids), chunk_len)]
     threads = []
 
     for i in range(t_no):
+        if i == len(cid_chunks):
+            break
         threads.append(AuthorThread(reddit=reddit, cids=cid_chunks[i], dateline=dateline))
 
     for thread in threads:
         thread.start()
 
     pct_done = 0.0
-    done = -1
+    done = 1
     hang = 0
-    while pct_done < 99.1:
+    while pct_done < 99.51:
         old_done = done
         done = 0
         for thread in threads:
-            done += thread.i
-        pct_done = done/total_len * 100
-        print("Progress: {}/{} ({:.2f}% - {:.2f}/s) ETD: {:.2f} minutes".format(done, total_len, pct_done, (done-old_done)/3, (1/60)*(total_len-done)/((done-old_done)/3)))
+            done += len(thread.authors)
+        pct_done = done / total_len * 100
+        rate = (done - old_done) / 3
+        etd = (1 / 60) * (total_len - done) / rate if rate != 0 else 999
+        print("Progress: {}/{} ({:.2f}% - {:.2f}/s) ETD: {:.2f} minutes".format(done, total_len, pct_done, rate, etd))
 
-        if done == old_done and (hang := hang + 1) > 5:
+        if rate == 0 and (hang := hang + 1) > 3:
             break
-        elif done != old_done:
+        elif rate != 0:
             hang = 0
 
         time.sleep(3)
@@ -59,10 +69,12 @@ def mt_author(t_no=10, reddit=None, cids=None, dateline=None):
         thread.join()
 
     a_list = []
+    dq_age = set()
     for thread in threads:
         a_list += thread.authors
+        dq_age.update(thread.dq_age)
 
-    return a_list
+    return a_list, dq_age
 
 
 def init_reddit():
@@ -101,13 +113,16 @@ def main():
         comment_ids = [line.strip() for line in f]
 
     b = time.time()
-    authors = mt_author(t_no=threads, reddit=init_reddit(), cids=comment_ids, dateline=dateline)
+    authors, dq_age = mt_author(t_no=threads, reddit=init_reddit(), cids=comment_ids, dateline=dateline)
     a = time.time()
 
-    print("Took {:.3f}s to retrieve {} comment authors".format(a - b, len(comment_ids)))
+    print("Took {:.2f}s to retrieve {} comment authors".format(a - b, len(comment_ids)))
 
     with open(file_name.rstrip('.txt') + '_Authors.txt', 'w') as f:
         f.write('\n'.join(authors))
+
+    with open(file_name.rstrip('.txt') + '_DQ-Age.txt', 'w') as f:
+        f.write('\n'.join(sorted(dq_age, key=str.casefold)))
 
     meta['AUID_SHA256'] = hash_sha256(file_name.rstrip('.txt') + '_Authors.txt')
     print(f"SHA-256 Hash: {meta['AUID_SHA256']}")
