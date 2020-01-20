@@ -70,7 +70,7 @@ def main():
     with open(file_name, 'r') as f:
         comment_ids = [line.strip() for line in f]
 
-    win_hash = get_win_hash(meta)
+    win_hash = get_win_hash(meta) if meta['Win_Hash'] == '' else meta['Win_Hash']
     meta['Win_Hash'] = win_hash
 
     total = (len(comment_ids))
