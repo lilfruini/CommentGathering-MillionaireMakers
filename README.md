@@ -14,6 +14,7 @@ Before starting, make sure you have [Python >3.8][py-org] installed
   - `WinnerFromFile`: Which comment list to draw from - **Truncated** or **Original**
   - `DrawTime`: Time the draw starts in [epoch time]. Starts counting blocks from this time
   - `WaitTillBlock`: The n-th block which will be the "winning block". Default: 3 
+  - `Win_Hash`: Hash of the winning block. Auto-filled via API if blank. If present, will be used by `getWinner`.
 
 Everything else should fill up automatically after running the scipts!
 
