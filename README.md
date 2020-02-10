@@ -1,7 +1,7 @@
 # CommentGathering-MillionaireMakers
 Hello! If you're here you're probably looking to validate the results of a draw or perform the draw yourself. 
 
-Before starting, make sure you have [Python >3.8][py-org] installed
+Before starting, make sure you have **[Python >3.8][py-org]** installed
 
 ## Configuration
 #### `meta.json`

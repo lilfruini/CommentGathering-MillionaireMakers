@@ -11,40 +11,44 @@ class AuthorThread(threading.Thread):
         super().__init__()
         self.reddit = reddit
         self.cids = cids
-        self.authors = []
         self.dateline = dateline
+        self.authors = []
         self.dq_age = set()
 
     def run(self):
         for cid in self.cids:
             author = Comment(self.reddit, id=cid).author
             try:
-                if author is None:
+                if author is None:  # Deleted comment
                     self.authors.append("Null")
                     continue
 
-                if author.created_utc > self.dateline:
+                if author.created_utc > self.dateline:  # New user
                     self.dq_age.add(author.name)
 
                 self.authors.append(author.name)
-            except:  # thread CANNOT crash
+            except:  # thread CANNOT crash, typically means suspended user
                 self.authors.append('NULL*')
 
 
 def mt_author(t_no=10, reddit=None, cids=None, dateline=None):
+    # Work splitter
     total_len = len(cids)
     chunk_len = total_len // t_no + 1
     cid_chunks = [cids[x:x + chunk_len] for x in range(0, len(cids), chunk_len)]
-    threads = []
 
+    # Assign work to threads
+    threads = []
     for i in range(t_no):
         if i == len(cid_chunks):
             break
         threads.append(AuthorThread(reddit=reddit, cids=cid_chunks[i], dateline=dateline))
 
+    # Start threads
     for thread in threads:
         thread.start()
 
+    # Progress Reporter (Just a bunch of math to show progress) #
     pct_done = 0.0
     done = 1
     hang = 0
@@ -62,12 +66,13 @@ def mt_author(t_no=10, reddit=None, cids=None, dateline=None):
             break
         elif rate != 0:
             hang = 0
-
         time.sleep(3)
+    # (END) Progress Reporter #
 
     for thread in threads:
         thread.join()
 
+    # Collect results & return
     a_list = []
     dq_age = set()
     for thread in threads:
@@ -106,26 +111,29 @@ def main():
         meta = json.load(f)
 
     file_name = meta['CID_Filename']
-    dateline = meta['Dateline']
-    threads = meta['Concurrent_Threads']
 
     with open(file_name, 'r') as f:
         comment_ids = [line.strip() for line in f]
 
+    # Start getting authors
     b = time.time()
-    authors, dq_age = mt_author(t_no=threads, reddit=init_reddit(), cids=comment_ids, dateline=dateline)
+    authors, dq_age = mt_author(t_no=meta['Concurrent_Threads'], reddit=init_reddit(), cids=comment_ids, dateline=meta['Dateline'])
     a = time.time()
 
-    print("Took {:.2f}s to retrieve {} comment authors".format(a - b, len(comment_ids)))
+    print("Took {:.2f}s to retrieve {} comment authors".format(a - b, len(authors)))
+    print("Number of young accounts: {}".format(len(dq_age)))
 
+    # Write results to file
     with open(file_name.rstrip('.txt') + '_Authors.txt', 'w') as f:
         f.write('\n'.join(authors))
 
     with open(file_name.rstrip('.txt') + '_DQ-Age.txt', 'w') as f:
         f.write('\n'.join(sorted(dq_age, key=str.casefold)))
 
+    # Calculate and write hashes to meta
     meta['AUID_SHA256'] = hash_sha256(file_name.rstrip('.txt') + '_Authors.txt')
-    print(f"SHA-256 Hash: {meta['AUID_SHA256']}")
+    meta['DQAGE_SHA256'] = hash_sha256(file_name.rstrip('.txt') + '_DQ-Age.txt')
+    print("\nAUID   SHA-256 Hash: {}\nDQ-Age SHA-256 Hash: {}".format(meta['AUID_SHA256'], meta['DQAGE_SHA256']))
 
     with open('meta.json', 'w') as outfile:
         json.dump(meta, outfile, indent=4)
