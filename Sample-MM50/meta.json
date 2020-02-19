@@ -1,0 +1,24 @@
+{
+    "threads": [
+        {
+            "link": "https://www.reddit.com/r/millionairemakers/comments/eq81a8/happy_2020_rmillionairemakers_is_celebrating_its/",
+            "length": 82393,
+            "trunc_length": 79775
+        }
+    ],
+    "CID_Filename": "OfficialMM50IDs.txt",
+    "Dateline": 1576886400,
+    "Concurrent_Threads": 80,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Original",
+    "DrawTime": 1579449600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "00000000000000000012df43bf33897b6198f73b82c2e865f2e312164870f6c5",
+    "CID_SHA256": "5e25567f8dc61eaf2b133a96ade6cf0cb7951f18119b0e93905e176271eea59a",
+    "AUID_SHA256": "695193d7f00a65bf4454dbae87f45894bfd61d6f25e0a323e7b9d2bb92db0c48",
+    "Total Participants": 82393,
+    "Winner_Number": 27598,
+    "Winner_ID": "fepli77",
+    "Winner_Link": "https://www.reddit.com/r/millionairemakers/comments/eq81a8/happy_2020_rmillionairemakers_is_celebrating_its/fepli77",
+    "Winner": "surprisesalmon"
+}

@@ -16,7 +16,19 @@ def init_reddit():
         user_agent=auth['user_agent'])
 
 
-def fetch_thread_ids(thread=None, reddit=None):
+def hash_sha256(file):
+    buf_size = 65536  # lets read stuff in 64kb chunks!
+    sha256 = hashlib.sha256()
+    with open(file, 'rb') as f:
+        while True:
+            data = f.read(buf_size)
+            if not data:
+                break
+            sha256.update(data)
+    return sha256.hexdigest()
+
+
+def fetch_thread_cids(thread=None, reddit=None):
     submission = reddit.submission(url=thread)
     submission.comment_sort = 'old'
     sublist = []
@@ -30,27 +42,16 @@ def fetch_thread_ids(thread=None, reddit=None):
     return sublist
 
 
-def fetch_all_ids(reddit=None, meta=None):
-    all_id = []
+def fetch_all_cids(reddit=None, meta=None):
+    # Get each individual thread's comment IDs, then combine them into one list
+    all_cid = []
     for thread in meta['threads']:
-        thread_ids = fetch_thread_ids(thread=thread['link'], reddit=reddit)
-        thread['length'] = len(thread_ids)
-        all_id += thread_ids
+        thread_cids = fetch_thread_cids(thread=thread['link'], reddit=reddit)
+        thread['length'] = len(thread_cids)
+        all_cid += thread_cids
 
-    print(f"Found {len(all_id)} comments")
-    return all_id
-
-
-def hash_sha256(file):
-    buf_size = 65536  # lets read stuff in 64kb chunks!
-    sha256 = hashlib.sha256()
-    with open(file, 'rb') as f:
-        while True:
-            data = f.read(buf_size)
-            if not data:
-                break
-            sha256.update(data)
-    return sha256.hexdigest()
+    print("Found {} comments".format(len(all_cid)))
+    return all_cid
 
 
 def main():
@@ -59,18 +60,18 @@ def main():
 
     file_name = meta['CID_Filename']
 
-    all_id = fetch_all_ids(reddit=init_reddit(), meta=meta)
+    # Get comment IDs from all threads
+    all_id = fetch_all_cids(reddit=init_reddit(), meta=meta)
 
+    # Save IDs to file
     with open(file_name, "w") as f:
         f.write("\n".join(sorted(all_id)))
 
-    print(f"Comments saved in {file_name}")
+    print("Comments saved in {}".format(file_name))
 
+    # Calculate and save file's hash
     meta['CID_SHA256'] = hash_sha256(file_name)
-    print(f"SHA-256 Hash: {meta['CID_SHA256']}")
-
-    if 'Win_Hash' not in meta.keys():
-        meta['Win_Hash'] = ''
+    print("Comment ID SHA-256 Hash: {}".format(meta['CID_SHA256']))
 
     with open('meta.json', 'w') as outfile:
         json.dump(meta, outfile, indent=4)
