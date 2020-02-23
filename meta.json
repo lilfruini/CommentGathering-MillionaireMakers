@@ -1,18 +1,19 @@
 {
     "threads": [
         {
-            "link": "https://www.reddit.com/r/millionairemakers/comments/eq81a8/happy_2020_rmillionairemakers_is_celebrating_its/"
+            "link": "https://old.reddit.com/r/millionairemakers/comments/f7jdxz/alright_were_getting_back_into_the_flow_happy/",
+            "length": 7860
         }
     ],
-    "CID_Filename": "OfficialMM50IDs.txt",
-    "Dateline": 1576886400,
+    "CID_Filename": "OfficialMM51IDs.txt",
+    "Dateline": 1579734000,
     "Concurrent_Threads": 40,
-    "Duplicate Action": "DQ",
-    "WinnerFromFile": "Truncated",
-    "DrawTime": 1579449600,
+    "Duplicate Action": "FirstOnly",
+    "WinnerFromFile": "Original",
+    "DrawTime":  1582495200,
     "WaitTillBlock": 3,
     "Win_Hash": "",
-    "CID_SHA256": "",
+    "CID_SHA256": "a8735f7dacabd6bd279ed096587f49ecaf2225508b7484bdea1739faf4d21949",
     "AUID_SHA256": "",
     "DQAGE_SHA256": "",
     "DQMULT_SHA256": "",
