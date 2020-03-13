@@ -77,6 +77,7 @@ def main():
         json.dump(meta, outfile, indent=4)
 
     x = input("End..")
+    return
 
 
 if __name__ == "__main__":

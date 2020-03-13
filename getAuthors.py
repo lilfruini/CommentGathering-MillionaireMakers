@@ -62,7 +62,10 @@ def mt_author(t_no=10, reddit=None, cids=None, dateline=None):
         etd = (1 / 60) * (total_len - done) / rate if rate != 0 else 999
         print("Progress: {}/{} ({:.2f}% - {:.2f}/s) ETD: {:.2f} minutes".format(done, total_len, pct_done, rate, etd))
 
-        if rate == 0 and (hang := hang + 1) > 3:
+        # if rate == 0 and (hang := hang + 1) > 3:
+        #     break
+        hang = hang + 1
+        if rate == 0 and hang > 3:
             break
         elif rate != 0:
             hang = 0
@@ -139,6 +142,7 @@ def main():
         json.dump(meta, outfile, indent=4)
 
     x = input("Done!")
+    return
 
 
 if __name__ == "__main__":
