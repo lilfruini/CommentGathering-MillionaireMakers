@@ -1,7 +1,6 @@
 import json
 import hashlib
 
-
 def hash_sha256(file):
     buf_size = 65536  # lets read stuff in 64kb chunks!
     sha256 = hashlib.sha256()
@@ -39,10 +38,12 @@ def remover(rm_list=None, target=None):
 
 
 def remove_dupes(authors=None, dq_age=None, dq_mult=None, cids=None, meta=None):
-    if (mode := meta['Duplicate Action']) not in {"DQ", "FirstOnly"}:
-        x = input("Invalid duplicate action! Only DQ or FirstOnly is acceptable! (Given: '{}')".format(mode))
+    mode = meta['Duplicate Action']
+    # if (mode := meta['Duplicate Action']) not in {"DQ", "FirstOnly"}:
+    if mode not in {"DQ", "FirstOnly"}:
+        x = input("Invalid duplicate action! Only DQ or FirstOnly is acceptable!")
         exit(1)
-    print("\nOperating Mode: " + mode)
+    print("Operating Mode: " + mode)
 
     dq_age.update({'Null', 'NULL*'})  # Everything in dq_age gets marked for removal
     rm_list = []
@@ -125,6 +126,7 @@ def main():
         json.dump(meta, outfile, indent=4)
 
     x = input("Removed {} comments!".format(before - after))
+    return
 
 
 if __name__ == "__main__":

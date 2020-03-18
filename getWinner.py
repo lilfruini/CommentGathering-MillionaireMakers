@@ -47,7 +47,7 @@ def get_win_hash(meta=None):
     time.sleep(wait_time)
 
     # Request the blocks of the entire day
-    resp = api_json('https://blockchain.info/blocks/{}000?format=json'.format(meta['DrawTime']))
+    resp = api_json('https://blockchain.info/blocks/{}000?format=json'.format(meta['DrawTime'] - 1))
     block0 = 0
     # Iterate through each block, and save the height of the last block mined BEFORE the draw time
     for block in resp['blocks']:
@@ -56,16 +56,22 @@ def get_win_hash(meta=None):
 
     # Calculate the winning block height/number
     win_block = block0 + meta['WaitTillBlock']
+    print("Winning Block Number: {}".format(win_block))
 
     # Keep requesting for the winner block's data till a valid reponse is received (i.e. it is mined)
-    while not (block := api_json('https://blockchain.info/block-height/{}?format=json'.format(str(win_block)))):
-        print("Awaiting Block {}.... Current Block: {}".format(win_block, height := api_json('https://blockchain.info/latestblock')['height']))
-        if win_block - height == 1:
+    # while not (block := api_json('https://blockchain.info/block-height/{}?format=json'.format(str(win_block)))):
+    block = api_json('https://blockchain.info/block-height/{}?format=json'.format(str(win_block)))
+    while not block:
+        height = api_json('https://blockchain.info/latestblock')['height']
+        # print("Awaiting Block {}.... Current Block: {}".format(win_block, height := api_json('https://blockchain.info/latestblock')['height']))
+        print("Awaiting Block {}.... Current Block: {}".format(win_block, height))
+        if win_block - height <= 1:
             time.sleep(10)
         elif win_block - height == 2:  # Sometimes 2 are mined near simultaneously
             time.sleep(30)
         else:
             time.sleep(90)
+        block = api_json('https://blockchain.info/block-height/{}?format=json'.format(str(win_block)))
 
     # Return the winning block's hash and print the time it was mined, as a double-check
     print("Block Time: {} UTC".format(time.strftime('%b %d %Y %H:%M:%S',  time.gmtime(block['blocks'][0]['time']))))
@@ -98,7 +104,7 @@ def main():
     winner = get_winner_name(reddit=init_reddit(), cid=winner_id)
 
     # Print winner details
-    print("\nUsing {} comment list!\n".format(meta['WinnerFromFile']))
+    print("Using {} comment list!\n".format(meta['WinnerFromFile']))
     print("Total Participants: {}\nWinner: {}\nHash: {}\n".format(total, winner_no, win_hash))
     print("Winner Comment ID: {}".format(winner_id))
     print("Winning Comment URL: {}".format(winner_link))
@@ -118,6 +124,7 @@ def main():
     if x.upper() == "Y":
         webopen(winner_link)
         x = input("Draw complete! Press Enter to exit...")
+        return
 
 
 if __name__ == "__main__":
