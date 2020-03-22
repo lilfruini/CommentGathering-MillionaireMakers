@@ -1,0 +1,27 @@
+{
+    "threads": [
+        {
+            "length": 77810,
+            "link": "https://www.reddit.com/r/millionairemakers/comments/fm4msu/you_may_be_in_quarantine_but_that_doesnt_mean_we/",
+            "trunc_length": 75102
+        }
+    ],
+    "CID_Filename": "OfficialMM52IDs.txt",
+    "Dateline": 1582153200,
+    "Concurrent_Threads": 80,
+    "Duplicate Action": "FirstOnly",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1584892800,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "934bb09c18a3545ac2b1747efedc0d9757fa08b1615bce4859145d682bb6b9f6",
+    "AUID_SHA256": "3cd8728eda8452e1e38da0c6346683899dd7ba0068d6e885bb9ad91d182d6188",
+    "DQAGE_SHA256": "de0ea9f849968dfcab4c4c38aa7820380977db43913d2a12a50a215a3825c94c",
+    "DQMULT_SHA256": "779cef3ecc9e2e4085b10906ee6b7bd2a4677234235580d6f94a1af7f79df699",
+    "TRUNC_SHA256": "10473d69c0344db168a6ee9243ce683d57401a76d60d2727ad033a6387eabe4d",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
