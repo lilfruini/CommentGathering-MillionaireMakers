@@ -16,7 +16,7 @@ Before starting, make sure you have **[Python >=3.5][py-org]** installed
   - `WaitTillBlock`: The n-th block which will be the "winning block". Default: 3 
   - `Win_Hash`: Hash of the winning block. Auto-filled via API if blank. If present, will be used by `getWinner`.
 
-Everything else should fill up automatically after running the scipts!
+Everything else should fill up automatically after running the scripts!
 
 ---  
 
