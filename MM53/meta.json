@@ -1,0 +1,27 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/g3cun9/i_already_did_the_quarantine_gag_last_month_so/",
+            "length": 9630,
+            "trunc_length": 9515
+        }
+    ],
+    "CID_Filename": "OfficialMM53IDs.txt",
+    "Dateline": 1584572400,
+    "Concurrent_Threads": 40,
+    "Duplicate Action": "FirstOnly",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1587312000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "656a185fc0647f04e4f9ae6b6ccb19e46b470e9814943f1992da4cc6ea1dfc1e",
+    "AUID_SHA256": "c222d6b1dd9059c601fd53cbd816cddbd5c4a410ee18b499ffcf195766ba097e",
+    "DQAGE_SHA256": "87542cf2e9e93f4927c5cf1d914cc748ca8eb564d4eff476d7da141c4f215d22",
+    "DQMULT_SHA256": "9a31a28419a80223c3ad04fd22adb5f084c0c912222e17e3fcd68d2070000e59",
+    "TRUNC_SHA256": "cb75bdd490c286baad7765583f56ba118673863fdaf4ec9f56067936e86e0784",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
