@@ -1,0 +1,14 @@
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = ["poetry>=0.12"]
+
+[tool]
+[tool.poetry]
+authors = ["Your Name <you@example.com>"]
+description = ""
+name = "comment-collection-53"
+version = "0.1.0"
+[tool.poetry.dependencies]
+praw = "^6.5"
+python = "^3.7"
+[tool.poetry.dev-dependencies]
