@@ -11,8 +11,6 @@ def init_reddit():
     return praw.Reddit(
         client_id=auth['client_id'],
         client_secret=auth['client_secret'],
-        username=auth['username'],
-        password=auth['password'],
         user_agent=auth['user_agent'])
 
 
