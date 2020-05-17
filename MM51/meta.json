@@ -1,0 +1,26 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/f7jdxz/alright_were_getting_back_into_the_flow_happy/",
+            "length": 7860
+        }
+    ],
+    "CID_Filename": "OfficialMM51IDs.txt",
+    "Dateline": 1579734000,
+    "Concurrent_Threads": 40,
+    "Duplicate Action": "FirstOnly",
+    "WinnerFromFile": "Original",
+    "DrawTime":  1582495200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "a8735f7dacabd6bd279ed096587f49ecaf2225508b7484bdea1739faf4d21949",
+    "AUID_SHA256": "",
+    "DQAGE_SHA256": "",
+    "DQMULT_SHA256": "",
+    "TRUNC_SHA256": "",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}

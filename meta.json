@@ -1,15 +1,15 @@
 {
     "threads": [
         {
-            "link": "https://www.reddit.com/r/millionairemakers/comments/eq81a8/happy_2020_rmillionairemakers_is_celebrating_its/"
+            "link": ""
         }
     ],
-    "CID_Filename": "OfficialMM50IDs.txt",
-    "Dateline": 1576886400,
+    "CID_Filename": "OfficialMM00IDs.txt",
+    "Dateline": 0,
     "Concurrent_Threads": 40,
     "Duplicate Action": "DQ",
     "WinnerFromFile": "Truncated",
-    "DrawTime": 1579449600,
+    "DrawTime": 0,
     "WaitTillBlock": 3,
     "Win_Hash": "",
     "CID_SHA256": "",
