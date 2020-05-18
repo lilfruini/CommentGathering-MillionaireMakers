@@ -61,7 +61,7 @@ def get_win_hash(meta=None):
         block = api_json('https://blockchain.info/block-height/{}?format=json'.format(str(win_block)))
 
     # Return the winning block's hash and print the time it was mined, as a double-check
-    print("Block Time: {} UTC".format(time.strftime('%b %d %Y %H:%M:%S',  time.gmtime(block['blocks'][0]['time']))))
+    print("\nBlock Found!\nBlock Time: {} UTC\n".format(time.strftime('%b %d %Y %H:%M:%S',  time.gmtime(block['blocks'][0]['time']))))
     return block['blocks'][0]['hash']
 
 
@@ -110,8 +110,8 @@ def main():
     x = input("\nEnter Y/y to open winning comment...")
     if x.upper() == "Y":
         webopen(winner_link)
-        x = input("Draw complete! Press Enter to exit...")
-        return
+    x = input("Draw complete! Press Enter to exit...")
+    return
 
 
 if __name__ == "__main__":
