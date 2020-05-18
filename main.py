@@ -11,9 +11,11 @@ if sys.version_info < (3, 5):
     if x != "Y":
         exit(1)
 
+
 if importlib.util.find_spec('praw') is None:
     x = input("The PRAW package is required but not installed.\nPlease run 'pip install praw' in your terminal.\nEnd..")
     exit(2)
+
 
 while True:
     x = int(input("\nHello!\nWhat would you like to launch?\n0. Exit\n1. getComments\n2. getAuthors\n3. removeInvalids\n4. getWinner\n5. dupeCmtCheck\n\nOption: "))

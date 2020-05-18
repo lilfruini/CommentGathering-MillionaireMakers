@@ -1,20 +1,9 @@
 import json
 from praw.models import Comment
-import praw
 from webbrowser import open as webopen
 import urllib.request
 import time
-
-
-def init_reddit():
-    with open('auth.json', 'r') as f:
-        auth = json.load(f)
-
-    return praw.Reddit(
-        client_id=auth['client_id'],
-        client_secret=auth['client_secret'],
-        user_agent=auth['user_agent'])
-
+import CGCommons
 
 def find_winner_thread(meta, winner_no):
     # Get the thread link of the winner's comment
@@ -99,7 +88,7 @@ def main():
     winner_no = (1 + (int(win_hash, 16) % total))
     winner_id = comment_ids[winner_no - 1]
     winner_link = ''.join((find_winner_thread(meta, winner_no), winner_id))
-    winner = get_winner_name(reddit=init_reddit(), cid=winner_id)
+    winner = get_winner_name(reddit=CGCommons.init_reddit(), cid=winner_id)
 
     # Print winner details
     print("Using {} comment list!\n".format(meta['WinnerFromFile']))

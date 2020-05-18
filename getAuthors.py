@@ -1,10 +1,8 @@
-import praw
 from praw.models import Comment
 import json
 import time
 import threading
-import hashlib
-
+import CGCommons
 
 class AuthorThread(threading.Thread):
     def __init__(self, reddit=None, cids=None, dateline=None):
@@ -85,28 +83,6 @@ def mt_author(t_no=10, reddit=None, cids=None, dateline=None):
     return a_list, dq_age
 
 
-def init_reddit():
-    with open('auth.json', 'r') as f:
-        auth = json.load(f)
-
-    return praw.Reddit(
-        client_id=auth['client_id'],
-        client_secret=auth['client_secret'],
-        user_agent=auth['user_agent'])
-
-
-def hash_sha256(file):
-    buf_size = 65536  # lets read stuff in 64kb chunks!
-    sha256 = hashlib.sha256()
-    with open(file, 'rb') as f:
-        while True:
-            data = f.read(buf_size)
-            if not data:
-                break
-            sha256.update(data)
-    return sha256.hexdigest()
-
-
 def main():
     with open('meta.json', 'r') as f:
         meta = json.load(f)
@@ -118,7 +94,7 @@ def main():
 
     # Start getting authors
     b = time.time()
-    authors, dq_age = mt_author(t_no=meta['Concurrent_Threads'], reddit=init_reddit(), cids=comment_ids, dateline=meta['Dateline'])
+    authors, dq_age = mt_author(t_no=meta['Concurrent_Threads'], reddit=CGCommons.init_reddit(), cids=comment_ids, dateline=meta['Dateline'])
     a = time.time()
 
     print("Took {:.2f}s to retrieve {} comment authors".format(a - b, len(authors)))
@@ -132,8 +108,8 @@ def main():
         f.write('\n'.join(sorted(dq_age, key=str.casefold)))
 
     # Calculate and write hashes to meta
-    meta['AUID_SHA256'] = hash_sha256(file_name.rstrip('.txt') + '_Authors.txt')
-    meta['DQAGE_SHA256'] = hash_sha256(file_name.rstrip('.txt') + '_DQ-Age.txt')
+    meta['AUID_SHA256'] = CGCommons.hash(file_name.rstrip('.txt') + '_Authors.txt')
+    meta['DQAGE_SHA256'] = CGCommons.hash(file_name.rstrip('.txt') + '_DQ-Age.txt')
     print("\nAUID   SHA-256 Hash: {}\nDQ-Age SHA-256 Hash: {}".format(meta['AUID_SHA256'], meta['DQAGE_SHA256']))
 
     with open('meta.json', 'w') as outfile:

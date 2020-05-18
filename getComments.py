@@ -1,30 +1,6 @@
-import praw
 from praw.models import MoreComments
 import json
-import hashlib
-
-
-def init_reddit():
-    with open('auth.json', 'r') as f:
-        auth = json.load(f)
-
-    return praw.Reddit(
-        client_id=auth['client_id'],
-        client_secret=auth['client_secret'],
-        user_agent=auth['user_agent'])
-
-
-def hash_sha256(file):
-    buf_size = 65536  # lets read stuff in 64kb chunks!
-    sha256 = hashlib.sha256()
-    with open(file, 'rb') as f:
-        while True:
-            data = f.read(buf_size)
-            if not data:
-                break
-            sha256.update(data)
-    return sha256.hexdigest()
-
+import CGCommons
 
 def fetch_thread_cids(thread=None, reddit=None):
     submission = reddit.submission(url=thread)
@@ -59,7 +35,7 @@ def main():
     file_name = meta['CID_Filename']
 
     # Get comment IDs from all threads
-    all_id = fetch_all_cids(reddit=init_reddit(), meta=meta)
+    all_id = fetch_all_cids(reddit=CGCommons.init_reddit(), meta=meta)
 
     # Save IDs to file
     with open(file_name, "w") as f:
@@ -68,7 +44,7 @@ def main():
     print("Comments saved in {}".format(file_name))
 
     # Calculate and save file's hash
-    meta['CID_SHA256'] = hash_sha256(file_name)
+    meta['CID_SHA256'] = CGCommons.hash(file_name)
     print("Comment ID SHA-256 Hash: {}".format(meta['CID_SHA256']))
 
     with open('meta.json', 'w') as outfile:

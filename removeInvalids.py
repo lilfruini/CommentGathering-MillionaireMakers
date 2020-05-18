@@ -1,17 +1,5 @@
 import json
-import hashlib
-
-def hash_sha256(file):
-    buf_size = 65536  # lets read stuff in 64kb chunks!
-    sha256 = hashlib.sha256()
-    with open(file, 'rb') as f:
-        while True:
-            data = f.read(buf_size)
-            if not data:
-                break
-            sha256.update(data)
-    return sha256.hexdigest()
-
+import CGCommons
 
 def get_dupes(a):
     # Duplicate and sort list
@@ -118,8 +106,8 @@ def main():
         f.write('\n'.join(comment_ids))
 
     # Calculate file hashes and save
-    meta['DQMULT_SHA256'] = hash_sha256(file_name.rstrip('.txt') + '_DQ-MultiPost.txt')
-    meta['TRUNC_SHA256'] = hash_sha256(file_name.rstrip('.txt') + '_Truncated.txt')
+    meta['DQMULT_SHA256'] = CGCommons.hash(file_name.rstrip('.txt') + '_DQ-MultiPost.txt')
+    meta['TRUNC_SHA256'] = CGCommons.hash(file_name.rstrip('.txt') + '_Truncated.txt')
     print("\nDQMult SHA-256 Hash: {}\nT_CID  SHA-256 Hash: {}".format(meta['DQMULT_SHA256'], meta['TRUNC_SHA256']))
 
     with open('meta.json', 'w') as outfile:
