@@ -1,7 +1,7 @@
 # CommentGathering-MillionaireMakers
 Hello! If you're here you're probably looking to validate the results of a draw or perform the draw yourself. 
 
-Before starting, make sure you have **[Python >=3.5][py-org]** and the **praw** package (`pip install praw`). 
+Before starting, make sure you have **[Python >=3.5][py-org]** and the **PRAW** package (`pip install praw`). 
 
 ## Configuration
 #### `meta.json`
