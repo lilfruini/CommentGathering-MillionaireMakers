@@ -1,0 +1,27 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/hcass3/drawing_thread_55/",
+            "length": 5413,
+            "trunc_length": 5381
+        }
+    ],
+    "CID_Filename": "OfficialMM55IDs.txt",
+    "Dateline": 1590015600,
+    "Concurrent_Threads": 40,
+    "Duplicate Action": "FirstOnly",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1592755200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "d4f1038b8d16a65bd1ec626f8f6770ba9d154141e7ab7933c78ebe70d1f65c12",
+    "AUID_SHA256": "af9bbd1afd93d2fc5e3a94cc5d332cbacab54b9f82b718a5978e7900b039c865",
+    "DQAGE_SHA256": "99d50004fddd01c05b8686354b29bb782ede5737289fc301a341df048dff038c",
+    "DQMULT_SHA256": "683e47f3026ebd45bbefdb2f2c17519b186f1d017b00acf4e2f6aaedce9b3e1f",
+    "TRUNC_SHA256": "38761cc450a8ebddd089bbb50789313b1b2f5ca98fc04bfed6032358ef0a9388",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
