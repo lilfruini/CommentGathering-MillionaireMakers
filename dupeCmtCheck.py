@@ -1,6 +1,5 @@
 import json
 
-
 def dupe_exists(cids):
     dupes = []
     last_cid = ""
@@ -29,7 +28,7 @@ def main():
         exit(1)
     else:
         x = input("All Good!")
-        exit(0)
+        return
 
 
 if __name__ == "__main__":

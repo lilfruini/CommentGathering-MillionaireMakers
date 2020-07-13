@@ -1,7 +1,7 @@
 # CommentGathering-MillionaireMakers
 Hello! If you're here you're probably looking to validate the results of a draw or perform the draw yourself. 
 
-Before starting, make sure you have **[Python >=3.5][py-org]** installed
+Before starting, make sure you have **[Python >=3.5][py-org]** and the **PRAW** package (`pip install praw`). 
 
 ## Configuration
 #### `meta.json`
@@ -22,7 +22,6 @@ Everything else should fill up automatically after running the scripts!
 
 #### `auth.json`
 Obtain client id and secret from [here](https://www.reddit.com/prefs/apps/). User agent can be anything.
-<br/>Username/password should work, I wouldn't recommend it though since its saved in plaintext!
 
 <br/><br/>
 
@@ -41,6 +40,14 @@ Obtain client id and secret from [here](https://www.reddit.com/prefs/apps/). Use
 
 `getWinner` - Gets the winner of the draw. If run before draw, will wait until `meta.json/DrawTime` and then wait for the winning block to be mined. 
 Once mined, the winner will be displayed and saved to `meta.json`. 
+
+<br/><br/>
+
+## Verifying past draws
+Please do take note that the comments and/or user account statuses may have changed since the draw. This could be due to users deleting comments or their account.
+<br/>As such, `getComments` and `getAuthors` will probably return a different list of IDs. Only the other scripts may be run with the provided ID, author and DQ lists; These should return the same results.
+<br/>
+<br/>Also, the files are (mostly) made in Linux, so if you're using another OS, the newline character may differ, resulting in a hashsum mismatch. 
 
 [py-org]: <https://www.python.org/downloads/>
 [epoch time]: <https://www.epochconverter.com/>
