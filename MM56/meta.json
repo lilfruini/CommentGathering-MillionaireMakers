@@ -1,0 +1,27 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/ht5xpd/drawing_thread_56_after_last_time_were_back_in/?sort=top",
+            "length": 7779,
+            "trunc_length": 7738
+        }
+    ],
+    "CID_Filename": "OfficialMM56IDs.txt",
+    "Dateline": 1592434800,
+    "Concurrent_Threads": 40,
+    "Duplicate Action": "FirstOnly",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1595174400,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "e57ae28b92664cd67bc89c1a707184b460d353347ef7f4b96bc544a3eae3f561",
+    "AUID_SHA256": "dad8b4ce5524db48bd19a719577f6db218329c05c1d08b733d7ee45d39b30523",
+    "DQAGE_SHA256": "98217fc99f543ed3ac8395c1fba6d054c63af5aadc18b8f894cb8a72f99bf2a7",
+    "DQMULT_SHA256": "ff2255ce3934be2c098207232ab91eb460fed516898eef6123b0e17adf537ac0",
+    "TRUNC_SHA256": "7623ea9d10884d7bc50f6d0bc0734b0234d80faefc61439219f6af8fe96f7db2",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}

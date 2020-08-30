@@ -1,0 +1,27 @@
+{
+    "threads": [
+        {
+            "link": "https://reddit.com/r/millionairemakers/comments/ie7dew/drawing_thread_57_the_months_have_gone_by_as_a/",
+            "length": 7754,
+            "trunc_length": 7654
+        }
+    ],
+    "CID_Filename": "OfficialMM57IDs.txt",
+    "Dateline": 1595458800,
+    "Concurrent_Threads": 40,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1598198400,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "c6fc972ad7a198f92b0c0570abef9e890d18f08c500309c059516fe916fc06e6",
+    "AUID_SHA256": "384f813e06a08032a948f3b607b30e127490bab87ba34d4212981beb8e830d5c",
+    "DQAGE_SHA256": "9764b033c3c877feb88c169095cd4ff4e09304b18cb9e5722594093cbed2b1ed",
+    "DQMULT_SHA256": "fecc372c92f1daafed8a6e240a4aae282b2393aa81ece506c68dbc5dc6fd542b",
+    "TRUNC_SHA256": "e104fca0c44521e334e5e94f952a89ca88db0fd92617fdcf0ae962428be27114",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}

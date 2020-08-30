@@ -1,0 +1,27 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/gkjiqo/were_looking_to_make_someone_a_millionaire_could/",
+            "length": 83267,
+            "trunc_length": 79960
+        }
+    ],
+    "CID_Filename": "OfficialMM54IDs.txt",
+    "Dateline": 1586991600,
+    "Concurrent_Threads": 40,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1589731200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "00000000000000000009bd7c7e08bd26b6c158c2d347f90bc7552e26721483d9",
+    "CID_SHA256": "573ad4148e79528eb00430cf6a8cdc5255e50c6fdd208c5af2c03cc004f54a1b",
+    "AUID_SHA256": "b1cdd5dce2da1d952b5425726f01e531d90829ec2fbc9d9a21f60fa93e50701b",
+    "DQAGE_SHA256": "4022e832bbd3182ceabd631d9f44130d0bdd7fc3d2bb374823b7b388cd0aa095",
+    "DQMULT_SHA256": "be7013c9cf7cd26be543a8aa985488df0ea7e66cd57afd189f5c38e3343b4db0",
+    "TRUNC_SHA256": "0a592fe3a3dae7c3c0f5995048874157b7a144999fa9a38a47937999c5ef64ca",
+    "Total Participants": 79960,
+    "Winner_Number": 21898,
+    "Winner_ID": "fqsequ9",
+    "Winner_Link": "https://old.reddit.com/r/millionairemakers/comments/gkjiqo/were_looking_to_make_someone_a_millionaire_could/fqsequ9",
+    "Winner": "M_epps01"
+}
