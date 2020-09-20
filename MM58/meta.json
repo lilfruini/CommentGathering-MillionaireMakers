@@ -1,0 +1,27 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/ivgnwd/drawing_thread_58_septembers_here_and_with_it/",
+            "length": 7547,
+            "trunc_length": 7468
+        }
+    ],
+    "CID_Filename": "OfficialMM58IDs.txt",
+    "Dateline": 1597878000,
+    "Concurrent_Threads": 40,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1600617600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "965c2c672cdcb28ac73f5bd866fc32403b8c7c8c94ffbb5c7e7ab93dccae8b58",
+    "AUID_SHA256": "62f3f887c55f6b6cffa3c3031c7a29ab25da8a653b327f4367ca914d92c8d866",
+    "DQAGE_SHA256": "a05064a8c85ee95f48a4ac9f8f5b5562005a7dd9057bc8fa72bb7c3bfb785d08",
+    "DQMULT_SHA256": "1972757669a1deea8c21f97b2eed5bd191e75eb31b0cef24428ab4f1eede8649",
+    "TRUNC_SHA256": "1d66d36bb98ed5a8547209b2270bd72caa6d61276469aeb336cd64f628e5dcdc",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
