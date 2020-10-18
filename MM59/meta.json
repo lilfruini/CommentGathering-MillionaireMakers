@@ -1,0 +1,27 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/jck66i/drawing_thread_59_i_think_we_all_deserve_a_little/",
+            "length": 7326,
+            "trunc_length": 7252
+        }
+    ],
+    "CID_Filename": "OfficialMM59IDs.txt",
+    "Dateline": 1600297200,
+    "Concurrent_Threads": 40,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1603036800,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "6bdfd8d448bad1a0e13011f269b1d1d6b83416a872b0ea79493c075d53506461",
+    "AUID_SHA256": "ed70c96c86ec382e462e8c045e2a9fcdd6b8665b4e6fdd4f180185508e97bc10",
+    "DQAGE_SHA256": "89db4164e849a1a5638eaf69249b552fe475c7091c9f34792b0907d367fec80e",
+    "DQMULT_SHA256": "f3c08ddbec20b198b0f8fc5fca351919aa856b4a9bb03993fbe003021b367dc9",
+    "TRUNC_SHA256": "acca048cd9bc8dfaf8d65987c45c31d704955e69fc8af141105b9af4573a8a73",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
