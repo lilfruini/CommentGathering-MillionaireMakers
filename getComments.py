@@ -58,13 +58,13 @@ def main(update=False):
                     comment_author_pairs.append((l[0], l[1]))
 
         added = len(comment_author_pairs)
-        comment_author_pairs.append((idx, None) for idx in new_id if idx not in pre_id_set)
+        comment_author_pairs += [(idx, None) for idx in new_id if idx not in pre_id_set]
         added = len(comment_author_pairs) - added
 
         print("\nRemoved {} comments\nAdded {} comments\n".format(removed, added))
 
         with open(file_name, 'w') as f:
-            f.write('\n'.join('{}{}'.format(x[0], ':' + x[1] if x[1] else '') for x in sorted(comment_author_pairs, key=lambda x: x[1])))
+            f.write('\n'.join('{}{}'.format(x[0], ':' + x[1] if x[1] else '') for x in sorted(comment_author_pairs, key=lambda x: x[0])))
 
     print("Comments saved in {}".format(file_name))
 
