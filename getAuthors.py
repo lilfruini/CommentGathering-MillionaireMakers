@@ -24,7 +24,8 @@ class AuthorThread(threading.Thread):
 
     def run(self):
         self.get_authors_fullnames(self.cids)
-        self.check_authors()
+        if self.dateline != -1:
+            self.check_authors()
 
     def get_authors_fullnames(self, ids: Iterable[str]):
         iterable = iter(ids)
@@ -43,8 +44,11 @@ class AuthorThread(threading.Thread):
 
             for comment in results.children:
                 if hasattr(comment, 'author_fullname'):
-                    self.author_fullnames[comment.author_fullname] = None
-                    self.authors.append(comment.author_fullname)
+                    if self.dateline != -1:
+                        self.author_fullnames[comment.author_fullname] = None
+                        self.authors.append(comment.author_fullname)
+                    else:
+                        self.authors.append(comment.author.name)
                 else:
                     self.authors.append('Null')
 
