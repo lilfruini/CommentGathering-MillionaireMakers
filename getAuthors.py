@@ -1,8 +1,15 @@
-from praw.models import Comment
+from typing import Iterable
+from itertools import islice
+
+import prawcore
+from praw.models import Redditors
+from praw.const import API_PATH
 import json
 import time
 import threading
 import CGCommons
+from tqdm import tqdm
+
 
 class AuthorThread(threading.Thread):
     def __init__(self, reddit=None, cids=None, dateline=None):
@@ -11,106 +18,157 @@ class AuthorThread(threading.Thread):
         self.cids = cids
         self.dateline = dateline
         self.authors = []
+        self.author_fullnames = {}
         self.dq_age = set()
+        self.checked_len = 0
 
     def run(self):
-        for cid in self.cids:
-            author = Comment(self.reddit, id=cid).author
+        self.get_authors_fullnames(self.cids)
+        self.check_authors()
+
+    def get_authors_fullnames(self, ids: Iterable[str]):
+        iterable = iter(ids)
+        while True:
+            last = time.time()
+            chunk = list(islice(iterable, 100))
+            if not chunk:
+                break
+
+            params = {"id": ",".join(chunk)}
             try:
-                if author is None:  # Deleted comment
-                    self.authors.append("Null")
-                    continue
+                results = self.reddit.get(API_PATH["info"], params=params)
+            except prawcore.exceptions.NotFound:
+                # None of the given IDs matched any Redditor.
+                continue
 
-                if author.created_utc > self.dateline:  # New user
-                    self.dq_age.add(author.name)
+            for comment in results.children:
+                if hasattr(comment, 'author_fullname'):
+                    self.author_fullnames[comment.author_fullname] = None
+                    self.authors.append(comment.author_fullname)
+                else:
+                    self.authors.append('Null')
 
-                self.authors.append(author.name)
-            except:  # thread CANNOT crash, typically means suspended user
-                self.authors.append('NULL*')
+            sleeptime = last + 1 - time.time()  # Avoid murdering the API
+            if sleeptime < 0:
+                continue
+            time.sleep(sleeptime)
+
+    def check_authors(self):
+        redditors = Redditors(reddit=self.reddit, _data=None)
+        last = time.time()
+        for user in redditors.partial_redditors(self.author_fullnames.keys()):
+            self.checked_len += 1
+            if hasattr(user, 'created_utc'):
+                if user.created_utc > self.dateline:
+                    self.dq_age.add(user.name)
+                self.author_fullnames[user.fullname] = user.name
+            else:
+                self.author_fullnames[user.fullname] = 'NULL*'
+
+            sleeptime = last + 1 - time.time()  # Avoid murdering the API
+            if sleeptime < 0 or self.checked_len % 100 != 0:
+                continue
+            time.sleep(sleeptime)
+            last = time.time()
+
+        for i in range(len(self.authors)):
+            if self.authors[i] == 'Null':
+                continue
+            self.authors[i] = self.author_fullnames[self.authors[i]]
 
 
-def mt_author(t_no=10, reddit=None, cids=None, dateline=None):
+def pbar_loop(pbar, thread, mode):
+    time.sleep(0.1)
+    while True:
+        n = len(thread.authors) if mode == 1 else thread.checked_len
+        pbar.n = n
+        pbar.last_print_n = n
+        pbar.refresh()
+        if n >= pbar.total:
+            if n > pbar.total:
+                for i in range(5):
+                    print("WARNING: Number of iterations ({:d}) exceeds expected value ({:d})".format(n, pbar.total))
+            return
+        time.sleep(0.2)
+
+
+def author_driver(reddit=None, cids=None, dateline=None):
     # Work splitter
     total_len = len(cids)
-    chunk_len = total_len // t_no + 1
-    cid_chunks = [cids[x:x + chunk_len] for x in range(0, len(cids), chunk_len)]
 
-    # Assign work to threads
-    threads = []
-    for i in range(t_no):
-        if i == len(cid_chunks):
-            break
-        threads.append(AuthorThread(reddit=reddit, cids=cid_chunks[i], dateline=dateline))
+    # Assign work to thread & start
+    athread = AuthorThread(reddit=reddit, cids=cids, dateline=dateline)
+    athread.start()
 
-    # Start threads
-    for thread in threads:
-        thread.start()
+    print("Collecting comment authors' UIDs....")
 
-    # Progress Reporter (Just a bunch of math to show progress) #
-    pct_done = 0.0
-    done = 1
-    hang = 0
-    while pct_done < 99.51:
-        old_done = done
-        done = 0
-        for thread in threads:
-            done += len(thread.authors)
-        pct_done = done / total_len * 100
-        rate = (done - old_done) / 3
-        etd = (1 / 60) * (total_len - done) / rate if rate != 0 else 999
-        print("Progress: {}/{} ({:.2f}% - {:.2f}/s) ETD: {:.2f} minutes".format(done, total_len, pct_done, rate, etd))
+    # Progress bar 1, for comment-fullname translation
+    pbar = tqdm(total=total_len, desc='Progress', unit=' Comments')
+    p1 = threading.Thread(target=pbar_loop, args=(pbar, athread, 1,))
+    p1.start()
+    p1.join()
+    pbar.close()
 
-        # if rate == 0 and (hang := hang + 1) > 3:
-        #     break
-        hang = hang + 1
-        if rate == 0 and hang > 3:
-            break
-        elif rate != 0:
-            hang = 0
-        time.sleep(3)
-    # (END) Progress Reporter #
+    print("\nAll comment authors' UIDs have been found. Now checking account creation times...")
 
-    for thread in threads:
-        thread.join()
+    # Progress bar 2, for creation time checks
+    pbar = tqdm(total=len(athread.author_fullnames), desc='Progress', unit=' Authors')
+    p1 = threading.Thread(target=pbar_loop, args=(pbar, athread, 2,))
+    p1.start()
+    p1.join()
+    pbar.close()
 
     # Collect results & return
-    a_list = []
-    dq_age = set()
-    for thread in threads:
-        a_list += thread.authors
-        dq_age.update(thread.dq_age)
+    athread.join()
 
-    return a_list, dq_age
+    return athread.authors, athread.dq_age
 
 
-def main():
+def main(update=False):
     with open('meta.json', 'r') as f:
         meta = json.load(f)
 
     file_name = meta['CID_Filename']
 
+    print("{} comments from {}...".format('Updating' if update else 'Loading', file_name))
     with open(file_name, 'r') as f:
-        comment_ids = [line.strip() for line in f]
+        if not update:
+            comment_ids = ['t1_' + line.strip().split(':')[0] for line in f]
+        else:
+            comment_author_pairs = []
+            comment_ids = []
+            for line in f:
+                l = line.strip().split(':')
+                if len(l) == 1:
+                    comment_author_pairs.append(('t1_' + l[0], None))
+                    comment_ids.append('t1_' + l[0])
+                else:
+                    comment_author_pairs.append(('t1_' + l[0], l[1]))
 
     # Start getting authors
     b = time.time()
-    authors, dq_age = mt_author(t_no=meta['Concurrent_Threads'], reddit=CGCommons.init_reddit(), cids=comment_ids, dateline=meta['Dateline'])
+    authors, dq_age = author_driver(reddit=CGCommons.init_reddit(), cids=comment_ids, dateline=meta['Dateline'])
     a = time.time()
 
     print("Took {:.2f}s to retrieve {} comment authors".format(a - b, len(authors)))
     print("Number of young accounts: {}".format(len(dq_age)))
 
     # Write results to file
-    with open(file_name.rstrip('.txt') + '_Authors.txt', 'w') as f:
-        f.write('\n'.join(authors))
+
+    with open(file_name, 'w') as f:
+        if not update:
+            f.write('\n'.join('{}:{}'.format(x[0][3:], x[1]) for x in zip(comment_ids, authors)))
+        else:
+            new_pairs = dict(zip(comment_ids, authors))
+            f.write('\n'.join('{}:{}'.format(x[0][3:], x[1] if x[1] else new_pairs[x[0]]) for x in comment_author_pairs))
 
     with open(file_name.rstrip('.txt') + '_DQ-Age.txt', 'w') as f:
         f.write('\n'.join(sorted(dq_age, key=str.casefold)))
 
     # Calculate and write hashes to meta
-    meta['AUID_SHA256'] = CGCommons.hash(file_name.rstrip('.txt') + '_Authors.txt')
+    meta['CID_SHA256'] = CGCommons.hash(file_name)
     meta['DQAGE_SHA256'] = CGCommons.hash(file_name.rstrip('.txt') + '_DQ-Age.txt')
-    print("\nAUID   SHA-256 Hash: {}\nDQ-Age SHA-256 Hash: {}".format(meta['AUID_SHA256'], meta['DQAGE_SHA256']))
+    print("\nComment ID SHA-256 Hash: {}\nDQ-Age SHA-256 Hash    : {}".format(meta['CID_SHA256'], meta['DQAGE_SHA256']))
 
     with open('meta.json', 'w') as outfile:
         json.dump(meta, outfile, indent=4)

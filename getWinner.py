@@ -1,9 +1,8 @@
 import json
-from praw.models import Comment
 from webbrowser import open as webopen
 import urllib.request
 import time
-import CGCommons
+
 
 def find_winner_thread(meta, winner_no):
     # Get the thread link of the winner's comment
@@ -11,11 +10,6 @@ def find_winner_thread(meta, winner_no):
         winner_no -= thread['trunc_length'] if meta['WinnerFromFile'] == "Truncated" else thread['length']
         if winner_no <= 0:
             return thread['link']
-
-
-def get_winner_name(reddit=None, url=None, cid=None):
-    # Get the winner's name
-    return Comment(reddit, id=cid).author.name
 
 
 def api_json(link):
@@ -61,7 +55,7 @@ def get_win_hash(meta=None):
         block = api_json('https://blockchain.info/block-height/{}?format=json'.format(str(win_block)))
 
     # Return the winning block's hash and print the time it was mined, as a double-check
-    print("\nBlock Found!\nBlock Time: {} UTC\n".format(time.strftime('%b %d %Y %H:%M:%S',  time.gmtime(block['blocks'][0]['time']))))
+    print("Block Time: {} UTC".format(time.strftime('%b %d %Y %H:%M:%S',  time.gmtime(block['blocks'][0]['time']))))
     return block['blocks'][0]['hash']
 
 
@@ -77,7 +71,12 @@ def main():
     print("Drawing winner from {}\nAbort if this is not correct!\n".format(file_name))
 
     with open(file_name, 'r') as f:
-        comment_ids = [line.strip() for line in f]
+        comment_ids = []
+        authors = []
+        for line in f:
+            l = line.strip().split(':')
+            comment_ids.append(l[0])
+            authors.append(l[1])
 
     # Set winning hash, obtains from API if it is not provided
     win_hash = get_win_hash(meta) if meta['Win_Hash'] == '' else meta['Win_Hash']
@@ -88,7 +87,7 @@ def main():
     winner_no = (1 + (int(win_hash, 16) % total))
     winner_id = comment_ids[winner_no - 1]
     winner_link = ''.join((find_winner_thread(meta, winner_no), winner_id))
-    winner = get_winner_name(reddit=CGCommons.init_reddit(), cid=winner_id)
+    winner = authors[winner_no - 1]
 
     # Print winner details
     print("Using {} comment list!\n".format(meta['WinnerFromFile']))

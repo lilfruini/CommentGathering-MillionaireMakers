@@ -1,25 +1,27 @@
 {
     "threads": [
         {
-            "link": ""
+            "link": "https://old.reddit.com/r/millionairemakers/comments/jck66i/drawing_thread_59_i_think_we_all_deserve_a_little/",
+            "length": 7314,
+            "trunc_length": 6990
         }
     ],
-    "CID_Filename": "OfficialMM00IDs.txt",
-    "Dateline": 0,
+    "CID_Filename": "OfficialMM59IDs.txt",
+    "Dateline": 1600297200,
     "Concurrent_Threads": 40,
     "Duplicate Action": "DQ",
     "WinnerFromFile": "Truncated",
-    "DrawTime": 0,
+    "DrawTime": 1603036800,
     "WaitTillBlock": 3,
-    "Win_Hash": "",
-    "CID_SHA256": "",
+    "Win_Hash": "00000000000000000005b77f7d091a2fdb628ad74f7806c46dad4d342b34a742",
+    "CID_SHA256": "a152ed201c52261df46483da2ebb21e418c661e4e08e45ee84e69eaed2b808ad",
     "AUID_SHA256": "",
-    "DQAGE_SHA256": "",
+    "DQAGE_SHA256": "9488ae9a2f1da43b4a3095682e04b798dcfabb17de3095ecb655d993423be493",
     "DQMULT_SHA256": "",
     "TRUNC_SHA256": "",
-    "Total Participants": 0,
-    "Winner_Number": 0,
-    "Winner_ID": "",
-    "Winner_Link": "",
-    "Winner": ""
+    "Total Participants": 6990,
+    "Winner_Number": 3053,
+    "Winner_ID": "g92m1ks",
+    "Winner_Link": "https://old.reddit.com/r/millionairemakers/comments/jck66i/drawing_thread_59_i_think_we_all_deserve_a_little/g92m1ks",
+    "Winner": "chincobra"
 }
