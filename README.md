@@ -1,5 +1,5 @@
 # CommentGathering-MillionaireMakers
-Hello! If you're here you're probably looking to validate the results of a draw or perform a draw yourself. 
+Hello! If you're here you're probably looking to validate the results of a draw or perform a draw yourself. Please read through the following sections before doing so though!
 
 <br/>
 
