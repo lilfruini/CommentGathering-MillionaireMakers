@@ -40,7 +40,7 @@ def main(update=False):
     if not update:
         with open(file_name, "w") as f:
             f.write("\n".join(sorted(new_id)))
-    else:
+    else:  # Don't overwrite existing records
         new_id_set = set(new_id)
         comment_author_pairs = []
         pre_id_set = set()
@@ -80,4 +80,5 @@ def main(update=False):
 
 
 if __name__ == "__main__":
-    main()
+    y = True if input("Updating? Y/N: ").upper() == 'Y' else False
+    main(update=y)

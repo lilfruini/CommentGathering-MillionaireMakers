@@ -1,7 +1,6 @@
 import json
 import CGCommons
 
-
 def get_dupes(a):
     # Duplicate and sort list
     a = a.copy()
@@ -82,12 +81,10 @@ def main():
     file_name = meta['CID_Filename']
 
     with open(file_name, 'r') as f:
-        comment_ids = []
-        authors = []
-        for line in f:
-            l = line.strip().split(':')
-            comment_ids.append(l[0])
-            authors.append(l[1])
+        comment_ids = [line.strip() for line in f]
+
+    with open(file_name.rstrip('.txt') + '_Authors.txt', 'r') as f:
+        authors = [line.strip() for line in f]
 
     with open(file_name.rstrip('.txt') + '_DQ-Age.txt', 'r') as f:
         dq_age = [line.strip() for line in f]
@@ -95,11 +92,10 @@ def main():
     # Find multiposters
     dq_mult = get_dupes(authors)
     print("{} users have young accounts!\n{} users have multiple posts!".format(len(dq_age), len(dq_mult)))
-    print("{} users have young accounts AND have multiple posts!".format(len(set(dq_age) & dq_mult)))
 
     # Remove all invalid comment IDs
     before = len(comment_ids)
-    comment_ids = remove_dupes(authors=authors, dq_age=set(dq_age), dq_mult=set(dq_mult), cids=list(zip(comment_ids, authors)), meta=meta)
+    comment_ids = remove_dupes(authors=authors, dq_age=set(dq_age), dq_mult=set(dq_mult), cids=comment_ids, meta=meta)
     after = len(comment_ids)
 
     # Save multiposter usernames & the truncated comment ID list
@@ -107,7 +103,7 @@ def main():
         f.write('\n'.join(sorted(dq_mult, key=str.casefold)))
 
     with open(file_name.rstrip('.txt') + '_Truncated.txt', 'w') as f:
-        f.write('\n'.join('{}:{}'.format(x[0], x[1]) for x in comment_ids))
+        f.write('\n'.join(comment_ids))
 
     # Calculate file hashes and save
     meta['DQMULT_SHA256'] = CGCommons.hash(file_name.rstrip('.txt') + '_DQ-MultiPost.txt')

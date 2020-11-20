@@ -2,7 +2,6 @@ import praw
 import hashlib
 import json
 
-
 def init_reddit():
     with open('auth.json', 'r') as f:
         auth = json.load(f)

@@ -1,12 +1,5 @@
-import getWinner
-import getAuthors
-import getComments
-import dupeCmtCheck
-import removeInvalids
-import sys
 import importlib.util
-import praw
-import pkg_resources
+import sys
 
 ver = sys.version_info
 if ver < (3, 5):
@@ -14,21 +7,28 @@ if ver < (3, 5):
     if x != "Y":
         exit(1)
 
-
 if importlib.util.find_spec('praw') is None:
-    x = input("The PRAW package is required but not installed.\nPlease run 'pip install praw' in your terminal.\nEnd..")
-    exit(2)
-
-praw_ver = tuple([int(x) for x in praw.__version__.split('.')])
-
-if praw_ver < (7, 1, 0):
-    x = input("Currently running PRAW {}\nThe PRAW package version is too low. Required version >= 7.1.0.\nPlease run 'pip install praw' in your terminal.\nEnd..".format(praw.__version__))
+    x = input("The PRAW package is required but not installed.\nPlease run 'pip3 install praw' in your terminal.\nEnd..")
     exit(2)
 
 if importlib.util.find_spec('tqdm') is None:
-    x = input("The tqdm package is required but not installed.\nPlease run 'pip install tqdm' in your terminal.\nEnd..")
+    x = input("The tqdm package is required but not installed.\nPlease run 'pip3 install tqdm' in your terminal.\nEnd..")
     exit(3)
 
+# Yes I'm violating Python style guide, sue me
+import getWinner
+import getAuthors
+import getComments
+import dupeCmtCheck
+import removeInvalids
+import praw
+
+p = praw.__version__.split('.')
+praw_ver = (int(p[0]), int(p[1]), int(p[2]))
+
+if praw_ver < (7, 1, 0):
+    x = input("Currently running PRAW {}\nThe PRAW package version is too low. Required version >= 7.1.0.\nPlease run 'pip3 install praw' in your terminal.\nEnd..".format(praw.__version__))
+    exit(2)
 
 while True:
     x = int(input("\nHello!\nWhat would you like to launch?\n0. Exit\n1. getComments\n2. getAuthors\n3. removeInvalids\n4. getWinner\n5. dupeCmtCheck\n\nOption: "))
@@ -40,6 +40,9 @@ while True:
         4: getWinner,
         5: dupeCmtCheck,
     }
+
+    if not isinstance(x, int) or not 0 <= x < 6:
+        continue
 
     if x == 0:
         print("Goodbye")
