@@ -98,7 +98,6 @@ class AuthorThread(threading.Thread):
                 self.author_fullnames[user.fullname] = 'NULL*'  # So this should be unused; They also dont mark suspended accounts on this endpoint either, so can't check it
 
             # Avoid murdering the API
-
             if self.checked_len % 100 == 0:
                 last += 1
                 sleeptime = last - time.time()
