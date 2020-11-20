@@ -14,7 +14,7 @@ Hello! If you're here you're probably looking to validate the results of a draw 
 #### `meta.json`
   - `threads`: Link to the drawing thread(s), if multiple, add a new set of `{}`!
   - `CID_Filename`: The filename of the comment ID file
-  - `Dateline`: The maximum creation time of a user's account in [epoch time]. Everything younger will end up in `DQ-Age`
+  - `Dateline`: The maximum creation time of a user's account in [epoch time]. Everything younger will end up in `DQ-Age`. Set to `-1`, or the future to disable this check.
   - `Duplicate Action`: **DQ**: Delete all duplicate authors' comments or **FirstOnly**: Delete all but first comment 
   - `WinnerFromFile`: Which comment list to draw from - **Truncated** or **Original**
   - `DrawTime`: Time the draw starts in [epoch time]. Starts counting blocks from this time

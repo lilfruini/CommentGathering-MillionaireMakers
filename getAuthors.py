@@ -16,7 +16,7 @@ class AuthorThread(threading.Thread):
         super().__init__(daemon=True)
         self.reddit = reddit
         self.cids = cids
-        self.dateline = dateline
+        self.dateline = dateline if dateline < time.time() else -1
         self.stop = stop
         self.authors = []
         self.author_fullnames = {}
@@ -24,6 +24,8 @@ class AuthorThread(threading.Thread):
         self.checked_len = 0
 
     def run(self):
+        if self.dateline == -1:
+            print("\nWARNING: User account creation time checking is disabled\n")
         self.get_authors_fullnames()
         if self.dateline != -1 and not self.stop.is_set():
             self.check_authors()
@@ -55,7 +57,7 @@ class AuthorThread(threading.Thread):
             # Parse the returned data
             for comment in results.children:
                 if hasattr(comment, 'author_fullname'):
-                    if self.dateline != -1:
+                    if self.dateline != -1:  # Supposed to only disable suspension check, but since that's not possible it'll just disable user checking outright
                         self.author_fullnames[comment.author_fullname] = None  # Store in author_fullnames to check author account creation time
                         self.authors.append(comment.author_fullname)  # Temporarily, to be replaced in check_authors
                     else:  # Don't check creation time, so just add name to the author list
