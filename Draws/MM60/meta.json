@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/jxzjl0/drawing_thread_60_there_are_several_more_days_in/",
+            "length": 6381,
+            "trunc_length": 6309
+        }
+    ],
+    "CID_Filename": "OfficialMM60IDs.txt",
+    "Dateline": 1603321200,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1606060800,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "d155512bdc24759b0cb6e723f0a0c0a359c074f7cac6e48961d174c4a1f94771",
+    "DQAGE_SHA256": "020584db849d83c75696070c8acf8a80899d7fd6dcc68e4e0513478437da6d7c",
+    "DQMULT_SHA256": "71204773b3ee94dd8fc7589af52a938f44e34e220f824925ae70e91c0fe126c2",
+    "TRUNC_SHA256": "5b0fd7c8220db4e21f4f80de2ee80e15ebcfca9c0f4e63cd992c5cbdffb1ddd4",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
