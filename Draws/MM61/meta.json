@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/kfvupg/drawing_thread_61_tis_to_the_holiday_season_for/",
+            "length": 29768,
+            "trunc_length": 29100
+        }
+    ],
+    "CID_Filename": "OfficialMM61IDs.txt",
+    "Dateline": 1605740400,
+    "Duplicate Action": "FirstOnly",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1608480000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "4a4e0d5778be968553798a059502798c4287f3b84d74686f4d722413a6bfead6",
+    "DQAGE_SHA256": "ab3a6f686f4d44a95470518584d5168e6a0ad67998deec88f3a60a563ffcdd2c",
+    "DQMULT_SHA256": "9562b068f43bc642cf4b338855892128f358f5da0e060e700fbb403d2438a89f",
+    "TRUNC_SHA256": "55a397c48453ba51ed6aa820c97f9521089e2078b0972e088e9058d91a866e17",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
