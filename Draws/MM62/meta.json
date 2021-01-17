@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/ky662w/drawing_thread_62_its_the_start_of_a_new_year_and/",
+            "length": 7697,
+            "trunc_length": 7619
+        }
+    ],
+    "CID_Filename": "OfficialMM62IDs.txt",
+    "Dateline": 1608159600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1610899200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "511d7d2eaeaf8ebe55b7e336a99c6a99026a99cfbe0d78cccda6e5e3b6133c27",
+    "DQAGE_SHA256": "a36f0078dc94ce26ccdd404c0de6b55701d7d161f750ac82ae0ee28a0b20bc3c",
+    "DQMULT_SHA256": "24b290c9d0636d2ff98d6a331c36e921a7e0dc4e028ec611e837eddf24592118",
+    "TRUNC_SHA256": "7d4b1f4982d96c4c94fbbdcdf98e6d1a4e9b0b3f7e3009c5d72c9b76299d929f",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
