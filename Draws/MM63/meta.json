@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://reddit.com/r/millionairemakers/comments/lnstn2/drawing_thread_63_februarys_here_and_much_like/",
+            "length": 6797,
+            "trunc_length": 6722
+        }
+    ],
+    "CID_Filename": "OfficialMM63IDs.txt",
+    "Dateline": 1611183600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1613923200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "ae4404f467e1ac7e39a824bd87a85d37f88cacc101d6ac54f19e79c4cf04b54a",
+    "DQAGE_SHA256": "3f80544735e18684f1e596d6d80f7a1837fa2faaf8e6f50e494428f08e5829e6",
+    "DQMULT_SHA256": "694b638dbcfddc1704d174febee958fee39d03d4969582ca2d9320b4259ebdd3",
+    "TRUNC_SHA256": "5507c542af73e810b9de48cc1e533d7ec57d628e6adc8d7565e6ae7e89f5e3ed",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
