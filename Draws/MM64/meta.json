@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://reddit.com/r/millionairemakers/comments/m8u6r8/entry_thread_64_players_the_monthly_thread_is/",
+            "length": 6836,
+            "trunc_length": 6776
+        }
+    ],
+    "CID_Filename": "OfficialMM64IDs.txt",
+    "Dateline": 1613604600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1616342400,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "0dc6065d703188e94955127ec5abad2da937792fbf1f06e9fc3dc422b41719c4",
+    "DQAGE_SHA256": "09573bfe7d241388e283e6730fb36132754f6f851c596fa8963db0346ceda12c",
+    "DQMULT_SHA256": "8f12eba75dfd0163d59b222cd7e381623714538d8984e27e4fab506c9c430449",
+    "TRUNC_SHA256": "c584678199cc15dc921496ef6a7c6b6b644e7ea0a844aa9d6f8c607229dfed21",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
