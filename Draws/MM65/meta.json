@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://reddit.com/r/millionairemakers/comments/mseq0z/entry_thread_65_were_back_and_were_here_to_make_a/",
+            "length": 8404,
+            "trunc_length": 8333
+        }
+    ],
+    "CID_Filename": "OfficialMM65IDs.txt",
+    "Dateline": 1616022000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1618761600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "a2c06e8b47d6d5933afc6a63f61ec41ae1a32c803e131623931c22fc5ad5a785",
+    "DQAGE_SHA256": "3ce234a551a906f20c30bb2b40b41847f9803b11a4868855ec3c97765b8e8470",
+    "DQMULT_SHA256": "0e0bd2deb2d744c30430726e8bbb8ffab3674625824c458354ab76404875c24e",
+    "TRUNC_SHA256": "f0a05510ffdf06f195eb2a3eebe3bd2ae544c3b946c6632058e016f0223bca43",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
