@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://www.reddit.com/r/millionairemakers/comments/ni57so/entry_thread_66_exams_and_ceremonies_have_come/",
+            "length": 6956,
+            "trunc_length": 6872
+        }
+    ],
+    "CID_Filename": "OfficialMM66IDs.txt",
+    "Dateline": 1619046000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1621785600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "d3e385d768d7968c67c86c0ef1afee4ed0c341a16fcb09e606daa0dcffd7381d",
+    "DQAGE_SHA256": "43788497b2be30723cd1a545007058d3f96497a51bac19e931dc777a8998678b",
+    "DQMULT_SHA256": "e6d56391f4d9d006473e7c9bc83ae14165073321656f1f16d8861ab57149ba53",
+    "TRUNC_SHA256": "83af5bf0991eda0957e975ea33dce54778031d395639b5b9160b94d8bd1f01cd",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
