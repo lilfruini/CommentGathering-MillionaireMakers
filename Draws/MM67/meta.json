@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/o32k2g/entry_thread_67_summers_here_and_so_is_another/",
+            "length": 7295,
+            "trunc_length": 7220
+        }
+    ],
+    "CID_Filename": "OfficialMM67IDs.txt",
+    "Dateline": 1621465200,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1624204800,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "c6bef74c1e5daa16c0eb117c8c5b3f8c87cc1eebde244a7dffac19acc08457b0",
+    "DQAGE_SHA256": "57a6dbdd5bb1bb333d9195b5db31c9967d8ef2c32f4cd352427eaf21c56e3000",
+    "DQMULT_SHA256": "6d6831a496cf854287a6ea103a89e516dd389b628811e2e2974640cf622c80ef",
+    "TRUNC_SHA256": "6467e943aae0369d69df778d9f64421c5900b714f26bc236323ed0c6e357546f",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
