@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/ols86d/entry_thread_68/",
+            "length": 7565,
+            "trunc_length": 7516
+        }
+    ],
+    "CID_Filename": "OfficialMM68IDs.txt",
+    "Dateline": 1623884400,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1626624000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "8d2b7ed3c0078808ec57d868e64a6babfc0f70c3950e7ff1f9ffee573397c6eb",
+    "DQAGE_SHA256": "dda4e47b2092ac4234a50357c17b57855d387d7a33213f2662007bb45449a278",
+    "DQMULT_SHA256": "efe6fae47ef9c860b9632b841e0329022f80b762ff6eb6bc9e0552bb36a80e62",
+    "TRUNC_SHA256": "50cadafbf4d2f09a9f408446ebddeee7b75199ed29ca36bade91cf9c17300349",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
