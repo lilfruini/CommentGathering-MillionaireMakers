@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/p8g9o5/entry_thread_69_nice/",
+            "length": 6843,
+            "trunc_length": 6771
+        }
+    ],
+    "CID_Filename": "OfficialMM69IDs.txt",
+    "Dateline": 1626908400,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1629648000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "dc9d34e6ce43449e991aa01218024d7d1515d65f9b970ae0eeb7cca6d1eb11d3",
+    "DQAGE_SHA256": "51b30fc1f2f378cad68c3f54984385f440d85eed30e396f8718503419c84f2d6",
+    "DQMULT_SHA256": "b25c7c2b63e21063ae5ece5171c00536c401c8bc23dbf8381f4d5889f95c1a22",
+    "TRUNC_SHA256": "c2f7d9cfefa8b4f023d6bedbfb670fe0a131720870925c9657093aac10ea1059",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
