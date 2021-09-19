@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/pqatlt/entry_thread_70_well_whats_cool_about_september_i/",
+            "length": 7480,
+            "trunc_length": 7428
+        }
+    ],
+    "CID_Filename": "OfficialMM70IDs.txt",
+    "Dateline": 1629327600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1632067200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "b3292fef677ada9b11f6465f778e0588431a5997ff91283f96c18b671fcd48b3",
+    "DQAGE_SHA256": "6f558ec4277d76cb2bd49eb0c782e781eb044310cd2024e810024e45010268f8",
+    "DQMULT_SHA256": "aa22694dec30b0c5f3f7847e949a838741ccd41ec4fa485c02096bcef84c3e23",
+    "TRUNC_SHA256": "84f5f53714f8d270ce88c5c705abf3dba1f12f1156b07fc6d175ba71d536f38e",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
