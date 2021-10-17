@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://www.reddit.com/r/millionairemakers/comments/q8zie0/entry_thread_71_the_scariest_time_of_the_year_is/",
+            "length": 8185,
+            "trunc_length": 8099
+        }
+    ],
+    "CID_Filename": "OfficialMM71IDs.txt",
+    "Dateline": 1631746800,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1634486400,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "c7e92d7bdc4ffcceb75cece758eb580a606f2ed12b0ea5ef223bf2f78ccf5a0c",
+    "DQAGE_SHA256": "591e70e478f2b62ff9be919f69c8ea4c9fa5da339ed4bf61b144e5985ff32f08",
+    "DQMULT_SHA256": "e1e89254628bf19bd76b0a6698fc1ac3b91eb8bfc4659063990a51874d83b8ec",
+    "TRUNC_SHA256": "6781e383b684a3814285baa38e1387d02dc5c644a773e38eb9572220497f275a",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
