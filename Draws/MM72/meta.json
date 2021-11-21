@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/qxrwwc/entry_thread_72_its_about_that_time_of_year_again/",
+            "length": 6629,
+            "trunc_length": 6553
+        }
+    ],
+    "CID_Filename": "OfficialMM72IDs.txt",
+    "Dateline": 1631746800,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1637510400,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "3bfdac8809dfa657c332b15a9156d59dddee14f13b7b1e5f6d8470a05dd92170",
+    "DQAGE_SHA256": "c247c23300fa942a237d6079b804676ab08c35eef292c6c1db1917d9d58dbff0",
+    "DQMULT_SHA256": "69b4b696013da338d957bd88b25bf2af45fc9fa05ff0b448ee1124a58a51c527",
+    "TRUNC_SHA256": "bc87c329e278724cf2a140c32d6e7f63632f66b159f3f22001b36f163bd14ee8",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
