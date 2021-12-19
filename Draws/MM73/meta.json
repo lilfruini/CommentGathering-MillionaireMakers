@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/ritsyx/entry_thread_73_tis_the_season_and_with_good/",
+            "length": 6106,
+            "trunc_length": 6075
+        }
+    ],
+    "CID_Filename": "OfficialMM73IDs.txt",
+    "Dateline": 1637172000,
+    "Duplicate Action": "FirstOnly",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1639929600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "806ea55fe558231a2620dfb66ce14cb26144f48775925cfc8ce75b0a86ffa1b9",
+    "DQAGE_SHA256": "5bdaf3389a1f580341b9fbfc6b1e85dede6805056c2549a2792b4dfa6f3cc9e7",
+    "DQMULT_SHA256": "abaec7ca98b00b6274461aaa9de7a94fbf0700283f1d60f34affd3038b1dc408",
+    "TRUNC_SHA256": "3b629ee1779064a407b4057ad7e045dbce9a1602d142b1280bf5f8bda5bd7f93",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
