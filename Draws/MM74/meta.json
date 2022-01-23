@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/s9nj9m/entry_thread_74/",
+            "length": 24986,
+            "trunc_length": 24451
+        }
+    ],
+    "CID_Filename": "OfficialMM74IDs.txt",
+    "Dateline": 1640196000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1642867200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "c510c3e2ad1b88eecebbee20f520c495106389ac7e59ee72bb786f8280692ec4",
+    "DQAGE_SHA256": "a955760357aa9be45b9b3fadfcc51ec3c625f8ca14dd06c1145271d906902ba0",
+    "DQMULT_SHA256": "b1c3732b43932ce1c8840e6a5f83acff2225aaa25d4803c1b32acd3116f74179",
+    "TRUNC_SHA256": "eb184ecd228d0f362f516ff6c8f29b821b335ee71741d12ad73ebe1941b96a1e",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
