@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/svv0gv/entry_thread_75_its_loving_season_but_not_all_of/",
+            "length": 34718,
+            "trunc_length": 33779
+        }
+    ],
+    "CID_Filename": "OfficialMM75IDs.txt",
+    "Dateline": 1642633200,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1645372800,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "bbee4d199f099f792f8606378a314e5bd41f482d3b091f3548fddab150e46769",
+    "DQAGE_SHA256": "77c47b6d156cfea109e27c143ade566533f37a1e5af0c3bf77ef9e7d6972dcfd",
+    "DQMULT_SHA256": "6f756c919ddc288a0c894cda8b13644c7b2aaa3ce7369b3678d2bba7b91fe471",
+    "TRUNC_SHA256": "ab18b5a3ecd3b8b8de1164b391132be641ab8f52fa9cab7d68eaa54bc2916dad",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
