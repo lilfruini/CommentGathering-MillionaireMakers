@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/thhkak/entry_thread_76_yellow_wheat_blue_skies_leave_a/",
+            "length": 8898,
+            "trunc_length": 8827
+        }
+    ],
+    "CID_Filename": "OfficialMM76IDs.txt",
+    "Dateline": 1645398000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1647792000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "41d1b8ff02a11b6fd44745cffedac6d0383a4a570ecdbcc2c091c72a34fc7423",
+    "DQAGE_SHA256": "ff9dfcd84fe9d4fb4e2c38dda7a087737d8be3251ab2af45c5df6f83e75eb54a",
+    "DQMULT_SHA256": "cdb41489b0698670bb6edc421299ba712d6c27fa5ac5768785a26f75eac91023",
+    "TRUNC_SHA256": "be825f0b17b4237eda0f28364594f5646d6f6af23cd0a2b815829fef56f05be9",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
