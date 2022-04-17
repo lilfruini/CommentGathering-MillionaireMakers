@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://www.reddit.com/r/millionairemakers/comments/u4k4o7/entry_thread_77_happy_easter_and_passover_were/",
+            "length": 8582,
+            "trunc_length": 8503
+        }
+    ],
+    "CID_Filename": "OfficialMM77IDs.txt",
+    "Dateline": 1647471600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1650211200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "45d7c4dcd423efb7fd8054a9e3cc81a5bf7ec381937de07d48fd79a339a1c20b",
+    "DQAGE_SHA256": "45b0992866a6690e3eab423f005bc9d0e06cdebb1f0b4f9a4972dcf949d8fd9d",
+    "DQMULT_SHA256": "fb5c5afb0e347073a24f8bb15253415e3dfb8d0acbb7119bf73745aaf808e0c5",
+    "TRUNC_SHA256": "265d421688fcac9e51efd070401b0a09fcd749d305481449953473b2f4449287",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
