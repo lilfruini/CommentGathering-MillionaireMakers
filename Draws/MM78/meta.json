@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/uua0vq/entry_thread_78_its_that_time_of_year_again_where/",
+            "length": 5618,
+            "trunc_length": 5561
+        }
+    ],
+    "CID_Filename": "OfficialMM78IDs.txt",
+    "Dateline": 1650495600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1653235200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "e447e3710678d409a436680830eb5580b9a543d928916477d3f6b2e8eea2285b",
+    "DQAGE_SHA256": "6b46aabafad24e3e1bfb44f19751f52ff1c5719f3e1dc3cc6e37471f2606f6b0",
+    "DQMULT_SHA256": "8da9fd311b500518c254a0b21d4c9a5fe9a04277ead231e9dfa2767f70146823",
+    "TRUNC_SHA256": "6ed48d3e918eb0f7d4b5daa7cefbab6ddba226f188295b91bd826e440b69a401",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
