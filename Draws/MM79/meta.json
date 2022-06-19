@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/veshpk/entry_thread_79_junes_a_nice_month_theres_sun/",
+            "length": 8423,
+            "trunc_length": 8365
+        }
+    ],
+    "CID_Filename": "OfficialMM79IDs.txt",
+    "Dateline": 1652914800,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1655654400,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "f178add6a827242971344813bffa14ee1b85e1e45694d20570e313fba7a54167",
+    "DQAGE_SHA256": "79364df2308f91ba105619afdbd01b0ad11f86ac0de289446e617d04202f5d82",
+    "DQMULT_SHA256": "d15bc93042853b1e6870a665ead836399d842bdf2a64a80d5a635ddc88f218c7",
+    "TRUNC_SHA256": "2fbdc34371093efa988571715f55a832b5ecb273e1f28d6e7c8ac708b5980113",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
