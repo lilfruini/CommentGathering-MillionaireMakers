@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/w01ncm/entry_thread_80_its_been_a_roller_coaster_of_a/",
+            "length": 19466,
+            "trunc_length": 19157
+        }
+    ],
+    "CID_Filename": "OfficialMM80IDs.txt",
+    "Dateline": 1655334000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1658073600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "05deb1be1e6ee5844bc893864e94edd99c71172f817af05e5e2b204ad51196f5",
+    "DQAGE_SHA256": "a11d727119e962462a4abf86d04eafaccde58f5779374a3bd5ad1f9e3ea52719",
+    "DQMULT_SHA256": "940617513fcca1b9326621bfdb5708df8d6303694645cb029dc4699897b35739",
+    "TRUNC_SHA256": "9c6b4946a5463537547778fbd7b4f3c14290aa062b841ca7cddf6b863028f34f",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
