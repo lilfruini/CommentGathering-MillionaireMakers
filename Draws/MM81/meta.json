@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://www.reddit.com/r/millionairemakers/comments/wsrljq/entry_thread_81_its_backtoschool_season_and_with/",
+            "length": 14693,
+            "trunc_length": 14439
+        }
+    ],
+    "CID_Filename": "OfficialMM81IDs.txt",
+    "Dateline": 1658358000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1661097600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "e7b52c49328f2c651eb10088564e3029611de09d753bacd58e5b2efccb8a4cc8",
+    "DQAGE_SHA256": "0fe46808df73c262d4c34fcfd90f410abd65b0c623d72b5fa435499ff3d523d5",
+    "DQMULT_SHA256": "7b100c382331323703ddbc444e9f9ec3e0e0016b5f1ebd31450d0a3827b1417e",
+    "TRUNC_SHA256": "9f88de5f77ba6ec60443b014f0ab17f406834d2371459efd863dce7775c335a1",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
