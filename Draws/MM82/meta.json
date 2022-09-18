@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://reddit.com/r/millionairemakers/comments/xg71fm/entry_thread_82_a_wise_person_once_said_that/",
+            "length": 6744,
+            "trunc_length": 6680
+        }
+    ],
+    "CID_Filename": "OfficialMM82IDs.txt",
+    "Dateline": 1660777200,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1663516800,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "4a2ba49983cb19114b895d643f0feeb9b3a381004be073091018861d4958eae5",
+    "DQAGE_SHA256": "15ebefcf8c9555207f3de2bdf321ef81ecad85dd73ece4da6ad06af46dfd042a",
+    "DQMULT_SHA256": "b2624e5b060c12d39710166bb68df0459eaff50b599b3c7cbbd8db23b274cc22",
+    "TRUNC_SHA256": "41ed410078ca7019e5d64d08978156d71943f0ba7823f3236562b407bf48b101",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
