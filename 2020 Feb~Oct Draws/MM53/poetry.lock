@@ -1,115 +1,164 @@
 [[package]]
-category = "main"
-description = "Python package for providing Mozilla's CA Bundle."
 name = "certifi"
-optional = false
-python-versions = "*"
 version = "2020.4.5.1"
-
-[[package]]
+description = "Python package for providing Mozilla's CA Bundle."
 category = "main"
-description = "Universal encoding detector for Python 2 and 3"
-name = "chardet"
 optional = false
 python-versions = "*"
-version = "3.0.4"
 
 [[package]]
+name = "charset-normalizer"
+version = "2.1.1"
+description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
 category = "main"
-description = "Internationalized Domain Names in Applications (IDNA)"
+optional = false
+python-versions = ">=3.6.0"
+
+[package.extras]
+unicode_backport = ["unicodedata2"]
+
+[[package]]
 name = "idna"
+version = "2.9"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "2.9"
 
 [[package]]
-category = "main"
-description = "PRAW, an acronym for `Python Reddit API Wrapper`, is a python package that allows for simple access to reddit's API."
 name = "praw"
+version = "6.5.1"
+description = "PRAW, an acronym for `Python Reddit API Wrapper`, is a python package that allows for simple access to reddit's API."
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "6.5.1"
 
 [package.dependencies]
 prawcore = ">=1.0.1,<2.0"
 update-checker = ">=0.16"
 websocket-client = ">=0.54.0"
 
+[package.extras]
+ci = ["coveralls"]
+dev = ["betamax (>=0.8,<0.9)", "betamax-matchers (>=0.3.0,<0.5)", "betamax-serializers (>=0.2,<0.3)", "black", "flake8", "mock (>=0.8)", "pre-commit", "pydocstyle", "pytest (>=2.7.3)", "sphinx", "sphinx-rtd-theme"]
+lint = ["black", "flake8", "pydocstyle", "sphinx", "sphinx-rtd-theme"]
+test = ["betamax (>=0.8,<0.9)", "betamax-matchers (>=0.3.0,<0.5)", "betamax-serializers (>=0.2,<0.3)", "mock (>=0.8)", "pytest (>=2.7.3)"]
+
 [[package]]
-category = "main"
-description = "Low-level communication layer for PRAW 4+."
 name = "prawcore"
+version = "1.0.1"
+description = "Low-level communication layer for PRAW 4+."
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.0.1"
 
 [package.dependencies]
 requests = ">=2.6.0,<3.0"
 
 [[package]]
-category = "main"
-description = "Python HTTP for Humans."
 name = "requests"
+version = "2.28.1"
+description = "Python HTTP for Humans."
+category = "main"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "2.23.0"
+python-versions = ">=3.7, <4"
 
 [package.dependencies]
 certifi = ">=2017.4.17"
-chardet = ">=3.0.2,<4"
-idna = ">=2.5,<3"
-urllib3 = ">=1.21.1,<1.25.0 || >1.25.0,<1.25.1 || >1.25.1,<1.26"
+charset-normalizer = ">=2,<3"
+idna = ">=2.5,<4"
+urllib3 = ">=1.21.1,<1.27"
+
+[package.extras]
+socks = ["PySocks (>=1.5.6,!=1.5.7)"]
+use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
-category = "main"
-description = "Python 2 and 3 compatibility utilities"
 name = "six"
+version = "1.14.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
-version = "1.14.0"
 
 [[package]]
-category = "main"
-description = "A python module that will check for package updates."
 name = "update-checker"
+version = "0.16"
+description = "A python module that will check for package updates."
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.16"
 
 [package.dependencies]
 requests = ">=2.3.0"
 
 [[package]]
-category = "main"
-description = "HTTP library with thread-safe connection pooling, file post, and more."
 name = "urllib3"
+version = "1.26.5"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
-version = "1.25.9"
+
+[package.extras]
+brotli = ["brotlipy (>=0.6.0)"]
+secure = ["certifi", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "ipaddress", "pyOpenSSL (>=0.14)"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [[package]]
-category = "main"
-description = "WebSocket client for Python. hybi13 is supported."
 name = "websocket-client"
+version = "0.57.0"
+description = "WebSocket client for Python. hybi13 is supported."
+category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "0.57.0"
 
 [package.dependencies]
 six = "*"
 
 [metadata]
-content-hash = "bcc04727f725a0f8c8d196b65efe7123ca2a513464f5f49ea0c28c9f6ada9a9d"
+lock-version = "1.1"
 python-versions = "^3.7"
+content-hash = "bcc04727f725a0f8c8d196b65efe7123ca2a513464f5f49ea0c28c9f6ada9a9d"
 
-[metadata.hashes]
-certifi = ["1d987a998c75633c40847cc966fcf5904906c920a7f17ef374f5aa4282abd304", "51fcb31174be6e6664c5f69e3e1691a2d72a1a12e90f872cbdb1567eb47b6519"]
-chardet = ["84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae", "fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"]
-idna = ["7588d1c14ae4c77d74036e8c22ff447b26d0fde8f007354fd48a7814db15b7cb", "a068a21ceac8a4d63dbfd964670474107f541babbd2250d61922f029858365fa"]
-praw = ["252246f8ea2ae6fba59bbf45de3fed568a80c086bca66747a2745dff5e11df4a", "544904cb821afff43c22e2dad4245658d41135d84b3a9463a5e29dd132da6efe"]
-prawcore = ["25dd14bf121bc0ad2ffc78e2322d9a01a516017105a5596cc21bb1e9a928b40c", "ab5558efb438aa73fc66c4178bfc809194dea3ce2addf4dec873de7e2fd2824e"]
-requests = ["43999036bfa82904b6af1d99e4882b560e5e2c68e5c4b0aa03b655f3d7d73fee", "b3f43d496c6daba4493e7c431722aeb7dbc6288f52a6e04e7b6023b0247817e6"]
-six = ["236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a", "8f3cd2e254d8f793e7f3d6d9df77b92252b52637291d0f0da013c76ea2724b6c"]
-update-checker = ["59cfad7f9a0ee99f95f1dfc60f55bf184937bcab46a7270341c2c33695572453", "70e39446fccf77b21192cf7a8214051fa93a636dc3b5c8b602b589d100a168b8"]
-urllib3 = ["3018294ebefce6572a474f0604c2021e33b3fd8006ecd11d62107a5d2a963527", "88206b0eb87e6d677d424843ac5209e3fb9d0190d0ee169599165ec25e9d9115"]
-websocket-client = ["0fc45c961324d79c781bab301359d5a1b00b13ad1b10415a4780229ef71a5549", "d735b91d6d1692a6a181f2a8c9e0238e5f6373356f561bb9dc4c7af36f452010"]
+[metadata.files]
+certifi = [
+    {file = "certifi-2020.4.5.1-py2.py3-none-any.whl", hash = "sha256:1d987a998c75633c40847cc966fcf5904906c920a7f17ef374f5aa4282abd304"},
+    {file = "certifi-2020.4.5.1.tar.gz", hash = "sha256:51fcb31174be6e6664c5f69e3e1691a2d72a1a12e90f872cbdb1567eb47b6519"},
+]
+charset-normalizer = [
+    {file = "charset-normalizer-2.1.1.tar.gz", hash = "sha256:5a3d016c7c547f69d6f81fb0db9449ce888b418b5b9952cc5e6e66843e9dd845"},
+    {file = "charset_normalizer-2.1.1-py3-none-any.whl", hash = "sha256:83e9a75d1911279afd89352c68b45348559d1fc0506b054b346651b5e7fee29f"},
+]
+idna = [
+    {file = "idna-2.9-py2.py3-none-any.whl", hash = "sha256:a068a21ceac8a4d63dbfd964670474107f541babbd2250d61922f029858365fa"},
+    {file = "idna-2.9.tar.gz", hash = "sha256:7588d1c14ae4c77d74036e8c22ff447b26d0fde8f007354fd48a7814db15b7cb"},
+]
+praw = [
+    {file = "praw-6.5.1-py3-none-any.whl", hash = "sha256:252246f8ea2ae6fba59bbf45de3fed568a80c086bca66747a2745dff5e11df4a"},
+    {file = "praw-6.5.1.tar.gz", hash = "sha256:544904cb821afff43c22e2dad4245658d41135d84b3a9463a5e29dd132da6efe"},
+]
+prawcore = [
+    {file = "prawcore-1.0.1-py2.py3-none-any.whl", hash = "sha256:25dd14bf121bc0ad2ffc78e2322d9a01a516017105a5596cc21bb1e9a928b40c"},
+    {file = "prawcore-1.0.1.tar.gz", hash = "sha256:ab5558efb438aa73fc66c4178bfc809194dea3ce2addf4dec873de7e2fd2824e"},
+]
+requests = [
+    {file = "requests-2.28.1-py3-none-any.whl", hash = "sha256:8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349"},
+    {file = "requests-2.28.1.tar.gz", hash = "sha256:7c5599b102feddaa661c826c56ab4fee28bfd17f5abca1ebbe3e7f19d7c97983"},
+]
+six = [
+    {file = "six-1.14.0-py2.py3-none-any.whl", hash = "sha256:8f3cd2e254d8f793e7f3d6d9df77b92252b52637291d0f0da013c76ea2724b6c"},
+    {file = "six-1.14.0.tar.gz", hash = "sha256:236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a"},
+]
+update-checker = [
+    {file = "update_checker-0.16-py2.py3-none-any.whl", hash = "sha256:59cfad7f9a0ee99f95f1dfc60f55bf184937bcab46a7270341c2c33695572453"},
+    {file = "update_checker-0.16.tar.gz", hash = "sha256:70e39446fccf77b21192cf7a8214051fa93a636dc3b5c8b602b589d100a168b8"},
+]
+urllib3 = [
+    {file = "urllib3-1.26.5-py2.py3-none-any.whl", hash = "sha256:753a0374df26658f99d826cfe40394a686d05985786d946fbe4165b5148f5a7c"},
+    {file = "urllib3-1.26.5.tar.gz", hash = "sha256:a7acd0977125325f516bda9735fa7142b909a8d01e8b2e4c8108d0984e6e0098"},
+]
+websocket-client = [
+    {file = "websocket_client-0.57.0-py2.py3-none-any.whl", hash = "sha256:0fc45c961324d79c781bab301359d5a1b00b13ad1b10415a4780229ef71a5549"},
+    {file = "websocket_client-0.57.0.tar.gz", hash = "sha256:d735b91d6d1692a6a181f2a8c9e0238e5f6373356f561bb9dc4c7af36f452010"},
+]
