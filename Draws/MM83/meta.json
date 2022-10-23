@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://reddit.com/r/millionairemakers/comments/ya7g03/entry_thread_83_do_you_remember_the_21st_night_of/",
+            "length": 6330,
+            "trunc_length": 6273
+        }
+    ],
+    "CID_Filename": "OfficialMM83IDs.txt",
+    "Dateline": 1663801200,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1666540800,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "3fe3c6dcff2b754b42b955478567164680f7be8e5c2af4514300a260aa2c2bef",
+    "DQAGE_SHA256": "c3413fc7e3f125ffd328aecabddd4c8da16fe752dd40bc295e5b74ad06f8fa39",
+    "DQMULT_SHA256": "04e656f4a8b1a371da898a1d1bf02d5261ccc81cb05b6133249e3bc6a6eb5e62",
+    "TRUNC_SHA256": "8319f3922208a829cda8bf154e8033d98854f27cf28b1067facdf5500cbd20f0",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
