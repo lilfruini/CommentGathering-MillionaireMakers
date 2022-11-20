@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://www.reddit.com/r/millionairemakers/comments/yyx6sq/entry_thread_84_stuffs_happened_and_its_been/",
+            "length": 5597,
+            "trunc_length": 5551
+        }
+    ],
+    "CID_Filename": "OfficialMM84IDs.txt",
+    "Dateline": 1666220400,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1668960000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "3f7bcc34bdd2cfcd642ba3b3b76bdf214c46f5e830c483441b524ea95b09a17f",
+    "DQAGE_SHA256": "acbf0493d773d67671bcfc91f8ff628e4e03422b75cf1c02592977e63a01f6e8",
+    "DQMULT_SHA256": "fb3b4bdca0587228cb749184f30cdc11fd3358f5de804e887832b6f4a1394eee",
+    "TRUNC_SHA256": "b545c8d3006149c6f897aec9db56739b5894f564cd295b2adcaf0483ce1a38f4",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
