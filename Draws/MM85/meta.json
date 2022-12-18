@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://reddit.com/r/millionairemakers/comments/znrp0n/entry_thread_85_im_not_toping_last_years_rhyme_so/",
+            "length": 5407,
+            "trunc_length": 5376
+        }
+    ],
+    "CID_Filename": "OfficialMM85IDs.txt",
+    "Dateline": 1668639600,
+    "Duplicate Action": "FirstOnly",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1671379200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "725596090114b28db1c0f9cec6f04acfb809e1c7bb1b91d6d97be6f2a2ae0f1d",
+    "DQAGE_SHA256": "7d5ef819229bf71f8f4e2cbea3296590d744f441cf939e439bc9a3a4616d73df",
+    "DQMULT_SHA256": "55cacbecbc8aa03c921cc271c45e7c08bf278c4039f84604ccab553767d91532",
+    "TRUNC_SHA256": "f8e6341d5a3378dc77a56b361cbb27ee234c95ba7583719dcc38882c36a9150e",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
