@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/10hbo3w/entry_thread_86_its_a_new_year_everyone_and_that/",
+            "length": 5534,
+            "trunc_length": 5497
+        }
+    ],
+    "CID_Filename": "OfficialMM86IDs.txt",
+    "Dateline": 1671663600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1674403200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "10d01ae56f0edef8ceb270c988f4558c760aeca3ea2d61431a8302f3f0169000",
+    "DQAGE_SHA256": "d268f56563eb262171bb231534757736661ad0324150a478742bd01a329ad966",
+    "DQMULT_SHA256": "a8834caab8023789c3aa03dc2a4d9c6dbda0ea74e3e7b810df3ee7ad0a717199",
+    "TRUNC_SHA256": "e7ecdb491d30cc7bc08b5547dfd6f46790531a42a02788400ebdbbad509ce48b",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
