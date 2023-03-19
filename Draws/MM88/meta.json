@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://reddit.com/r/millionairemakers/comments/11u6x9m/entry_thread_88_were_counting_down_to_100_from/",
+            "length": 5861,
+            "trunc_length": 5783
+        }
+    ],
+    "CID_Filename": "OfficialMM88IDs.txt",
+    "Dateline": 1676502000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1679241600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "b4724617263a5f66253bc5a9f1c35573bec1c90619d52a083fdf0c9a78e3cfd8",
+    "DQAGE_SHA256": "21d4cd835a4b868d408cdc4a9d89487eb06a3937d75b99b024a424570d397165",
+    "DQMULT_SHA256": "228ac9116b46862c1e644ac349dd91be3dbbf7dedb625fbc2016246f2201d074",
+    "TRUNC_SHA256": "19563deabd4a3b7fcd27a60cefaed83fbd25268571c29c129905d972f57e9fe6",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
