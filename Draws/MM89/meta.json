@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://reddit.com/r/millionairemakers/comments/12ulspc/entry_thread_89_aprils_been_going_places_and_so/",
+            "length": 5006,
+            "trunc_length": 4962
+        }
+    ],
+    "CID_Filename": "OfficialMM89IDs.txt",
+    "Dateline": 1679526000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1682265600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "079937200e0b4c7a17263f41776d882fc5a1b8c6be34107d143ccf8d26fdc0ed",
+    "DQAGE_SHA256": "d6f8ae5efe195745584c08a52a9b3224bb63cab2977496f1ac78f292607421de",
+    "DQMULT_SHA256": "cd670fb2848d70d32b29f9ee0ee1656822b7dd9852e08097e60353d2ca0a051f",
+    "TRUNC_SHA256": "1cd39661f876ca6becc738e737d3c785b66f769dc542e524c75e9222a5031378",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
