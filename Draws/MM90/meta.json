@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://www.reddit.com/r/millionairemakers/comments/13maoqd/entry_thread_90_whether_youre_striking_villains/",
+            "length": 4919,
+            "trunc_length": 4870
+        }
+    ],
+    "CID_Filename": "OfficialMM90IDs.txt",
+    "Dateline": 1681945200,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1684684800,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "354c77317a3614a3c7e1adfdd3fd2733e67ac46d5ed335780b8bde5583954388",
+    "DQAGE_SHA256": "d7916fe08e5a2e609acb64337af4c8ac1b39850dfebb51d246ce10b08d1b388a",
+    "DQMULT_SHA256": "17bd6500c407741d76f5e7ba0f4253d001fc98d3f408dc39421229ad609b628d",
+    "TRUNC_SHA256": "7aef6ef0ad9d399843e2cffcb4aaf54ced6e6041656945a18ae74fb1100a0eaf",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
