@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://reddit.com/r/millionairemakers/comments/14bak20/entry_thread_91_lets_do_things_differently_this/",
+            "length": 2888,
+            "trunc_length": 2858
+        }
+    ],
+    "CID_Filename": "OfficialMM91IDs.txt",
+    "Dateline": 1684364400,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1687104000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "769197365fedc1dc138e12ba6b26b781d222b80d947fbf1f0e75f36791fc29bd",
+    "DQAGE_SHA256": "fc9940a91fed9ffbda4965966dbcf2772cb11a1d0d16ef244e68623eacec7bd2",
+    "DQMULT_SHA256": "67da19796e6dfe94f7cce7b14ffe6306764adf168ab57e86504d29eaae8f290a",
+    "TRUNC_SHA256": "609159018bfd5c7fb1a63fca366c1ddcfeb33035c3c26235a4cb98e58b2f46d7",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
