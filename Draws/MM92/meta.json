@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/15632vg/entry_thread_92/",
+            "length": 2853,
+            "trunc_length": 2816
+        }
+    ],
+    "CID_Filename": "OfficialMM92IDs.txt",
+    "Dateline": 1687388400,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1690128000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "7f7767f6a89fb1cd1c149a38a1418d3ab0b0988e2eca9967d10daf5bfad7dc4e",
+    "DQAGE_SHA256": "c1bd705ac3d1b8a7453114d46549dc4a635ca97fca5f3b59446bf0235faa17ce",
+    "DQMULT_SHA256": "a77e741da689809d57dcc8f8a5574272bf3367488afaae9a009498c219def118",
+    "TRUNC_SHA256": "20b70a5804c7c6d3867af10b4fefe5982fed948603bf33d5d0d89058df74059c",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
