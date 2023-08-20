@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/15uz7nj/entry_thread_93_were_back_and_were_walking/",
+            "length": 2835,
+            "trunc_length": 2806
+        }
+    ],
+    "CID_Filename": "OfficialMM93IDs.txt",
+    "Dateline": 1689807600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1692547200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "121b9e6fdf6944b84a4cf1ba5302751401c6e833d77f24f307fc4d1eb40f2911",
+    "DQAGE_SHA256": "366b04eb7f0a1bc12091cb751b142f7f8a4ee9f655c73d81bd86c09f36355b83",
+    "DQMULT_SHA256": "66b5278ad97a05e4047e8b43c6199f3d14673bda76a99ca6977141cd9f33565a",
+    "TRUNC_SHA256": "dcea25da01913accb19379b9efaa42a23d0970e21554b5fca2a06d8d82da1f1a",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
