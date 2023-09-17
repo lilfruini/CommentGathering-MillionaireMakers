@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/16jroas/entry_thread_94_welcome_back_its_a_bit_early_this/",
+            "length": 2646,
+            "trunc_length": 2630
+        }
+    ],
+    "CID_Filename": "OfficialMM94IDs.txt",
+    "Dateline": 1692226800,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1694966400,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "e751904bddeb4c3ceae167324da114d49654ed03e95a288911d05d3fba565f05",
+    "DQAGE_SHA256": "8a8ca0559c416269074fb39b3ff66f99473dbd1b2e1b78291ee19cf8344f4f15",
+    "DQMULT_SHA256": "125778779379b8fe80539339d8efedf4b6552bfcb91b2464e44c9c1970c3c50d",
+    "TRUNC_SHA256": "10a541ac6914f58024200c036c322494cc0d75e375c3403f85c8855e23517947",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
