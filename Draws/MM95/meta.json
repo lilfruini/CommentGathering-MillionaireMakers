@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/17co1n6/entry_thread_95_boo_well_if_that_didnt_scare/",
+            "length": 2520,
+            "trunc_length": 2501
+        }
+    ],
+    "CID_Filename": "OfficialMM95IDs.txt",
+    "Dateline": 1695250800,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1697990400,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "570b2390943b5dad40a8f4f156025042aeab26d7758dfd2e673618e2c1175182",
+    "DQAGE_SHA256": "9f03d199897c8195068255e8e78debb4a35c5e8390d16397ce5b1b607d1cc84a",
+    "DQMULT_SHA256": "7fd87cfad05b8087862fcb46ed2c7ed7a42a9f7bfc22a13cdda3d9be35bd8d30",
+    "TRUNC_SHA256": "1b44f44966b288a6106124f777e50e3b2df3f2a080ccd3d7d94e0a1e7bf7372f",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
