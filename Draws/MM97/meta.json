@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/18jcthb/entry_thread_97_happy_holidays_in_the_spirit_of/",
+            "length": 1936,
+            "trunc_length": 1901
+        }
+    ],
+    "CID_Filename": "OfficialMM97IDs.txt",
+    "Dateline": 1700089200,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1702828800,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "70b08936dcce7b68c5add8e3af5066d8cb9b162d55672415cf8a4f7785ab7784",
+    "DQAGE_SHA256": "244ff7899537f28c42b96609d676a51949eb44e66b329b52d18bcb8712a97cb8",
+    "DQMULT_SHA256": "b6b30e2905339d5f9578739e29a18e42d47a702682ad18ab5068329d6c69f0e3",
+    "TRUNC_SHA256": "7c916c907749928e48e0cdece0b7854fc8aa08348ee7d6de6a3320b4aedca441",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
