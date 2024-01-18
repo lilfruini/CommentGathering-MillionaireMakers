@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/197muhy/entry_thread_98_a_new_year_has_arrived_and_with/",
+            "length": 3087,
+            "trunc_length": 3058
+        }
+    ],
+    "CID_Filename": "OfficialMM98IDs.txt",
+    "Dateline": 1702767600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1705593600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "906496cc3a22557d111d8d5e07462eb87b3669994b62620eca08be66562d32cc",
+    "DQAGE_SHA256": "9fbc1ae15413870b6c0a23f231bf8b28a1c017563549bf73b6f688f8914d8411",
+    "DQMULT_SHA256": "e63dcde990d35c82e477a45d17a95b4bacac4117f2a6fd560b673e2dbc6331af",
+    "TRUNC_SHA256": "809152d60c7ab618a3e0f74054b71ef89701d662df2a314c3c23aae89469944f",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
