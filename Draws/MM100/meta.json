@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1hf4v0k/entry_thread_100_were_so_back_after_ninetynine/",
+            "length": 12262,
+            "trunc_length": 12095
+        }
+    ],
+    "CID_Filename": "OfficialMM100IDs.txt",
+    "Dateline": 1731711600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1734451200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "78d82ca02fb2b1e3fe785bbf48aa33e478b5374cd6dcfc13572dec4e5a5c4750",
+    "DQAGE_SHA256": "43caaeedbee0eb9cf5df377cc61eb1da0041e50d02d28f882c244a3438a78bb5",
+    "DQMULT_SHA256": "95942ba6053f833f4b5f220516fffa523f335d13783411ba9d1cad69ac39734e",
+    "TRUNC_SHA256": "769ae583296b593dd24e05864c20dc17e8c624e780ef900a5b830ba1cd29ad4c",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
