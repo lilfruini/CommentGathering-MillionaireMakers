@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1i2ae1w/entry_thread_101_its_a_new_year_lets_make_it_a/",
+            "length": 7347,
+            "trunc_length": 7253
+        }
+    ],
+    "CID_Filename": "OfficialMM101IDs.txt",
+    "Dateline": 1765926000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1737129600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "757a5eac8417974342ce90b8c41ef29524a94fafeb70d4c312d70db06d1b7886",
+    "DQAGE_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DQMULT_SHA256": "d8f208fe2d73e40281a2983fc0ecef1eaf8148401dc11cfbebd318e8f62f7f14",
+    "TRUNC_SHA256": "4a3892422412f17e29292e25df0803636c3887c6e8ab257e6f20bb105c9e53f6",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
