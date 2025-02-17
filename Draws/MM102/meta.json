@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1iqdzmw/entry_thread_102_happy_postvalentines_day_today/",
+            "length": 7598,
+            "trunc_length": 7523
+        }
+    ],
+    "CID_Filename": "OfficialMM102IDs.txt",
+    "Dateline": 1737068400,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1739808000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "698a8c2edd3f06cda3115b5441325a5a91b97a50aa1d17fa91450ce6c8d891f6",
+    "DQAGE_SHA256": "b01df0bf6a5ade8306ca0548af539fa2f1fba84f66346729dad275dff78f91d5",
+    "DQMULT_SHA256": "c0087f5febae8fb40622c1ea1e2fd95b3402f9bab7ac8637218c214aaf02106a",
+    "TRUNC_SHA256": "8248d992aae7226fd644c6e0f5d805f9f6d52d6be75f1b8e90e27112aadaaa5d",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
