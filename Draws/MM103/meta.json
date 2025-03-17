@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1jc7jmz/entry_thread_103_its_that_time_where_we_spring/",
+            "length": 5593,
+            "trunc_length": 5534
+        }
+    ],
+    "CID_Filename": "OfficialMM103IDs.txt",
+    "Dateline": 1739487600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1742227200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "f428d7ecfe06c757acf9046c9e98485dc6c6077efbb1feacb1c5327aad13d980",
+    "DQAGE_SHA256": "e8b7a5aef024b0f7791285bdaa2bb5a2227177a8b45404b0a3763ebfb6a38a2c",
+    "DQMULT_SHA256": "040d9a5ca8eab13b8e84dffae9f4edb0c43e09018b2d6e092bfc084ae04937ba",
+    "TRUNC_SHA256": "e164b457577aa101ffe5f20128439d95db5bbfd9072b0d42e8bdba012b2b5370",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
