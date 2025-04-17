@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1k05ouk/entry_thread_104_happy_tax_day_after_doing_your/",
+            "length": 5039,
+            "trunc_length": 4985
+        }
+    ],
+    "CID_Filename": "OfficialMM104IDs.txt",
+    "Dateline": 1742166000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1744905600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "4c77b6c5e9a7ea7367886683ce182b4cb46188be52778648da3888521d9c2f0e",
+    "DQAGE_SHA256": "7c5f02d2f955315d044930053a7a4b432242c687196b0574b4abb9e189371274",
+    "DQMULT_SHA256": "1b3239d9169bb15a683fde7e887777a8706570dd974165b440351ce11a33576c",
+    "TRUNC_SHA256": "477989316779f121e0a8aa92009ed3af21e32ce8ad4f5dbf8776d150d9c6a99f",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
