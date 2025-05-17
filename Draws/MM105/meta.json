@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1knm0km/entry_thread_105_exams_are_upon_us_whether_youre/",
+            "length": 3639,
+            "trunc_length": 3619
+        }
+    ],
+    "CID_Filename": "OfficialMM105IDs.txt",
+    "Dateline": 1744758000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1747497600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "fd47bfcc028e2b9d9be5c013a917f8678454d0189c2718c65947b34731adea61",
+    "DQAGE_SHA256": "a0c85204291ea7230bdc885ecdcadceb46a78427868d5d787ed198482b8dae66",
+    "DQMULT_SHA256": "0d1a2a78c352523c24e4fe753fec4e963a93e04d3a63699e2c6e91517d99500f",
+    "TRUNC_SHA256": "19ab26f4197f94dcd7a0f0562f0eeb9710b966cc63bd4a12d978d64690dea146",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
