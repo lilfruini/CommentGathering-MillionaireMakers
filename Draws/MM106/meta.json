@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1lcdlbv/entry_thread_106_happy_fathers_day_and_happy/",
+            "length": 4034,
+            "trunc_length": 3999
+        }
+    ],
+    "CID_Filename": "OfficialMM106IDs.txt",
+    "Dateline": 1747436400,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1750176000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "e778466ec334f7f91d99a404c42d8e6c7ae4050926a246be23bd0651ab364ddb",
+    "DQAGE_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DQMULT_SHA256": "9e620966b63231a8f6b94756784c0a7d36f87d28e8a1ae5a22c70d140e701821",
+    "TRUNC_SHA256": "5b5a27082af70502f01507f69a68f5cce712bf93ec7b03d4b7b5ce6575c90c56",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
