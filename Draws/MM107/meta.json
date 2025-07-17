@@ -1,1 +1,25 @@
-
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1m0wkw3/entry_thread_107_welcome_to_july_whether_youre_on/",
+            "length": 6690,
+            "trunc_length": 6615
+        }
+    ],
+    "CID_Filename": "OfficialMM107IDs.txt",
+    "Dateline": 1750028400,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1752768000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "e691ad62476329780fd5b054dcaa2568a4d7845ed342c202bf2489a5fc09fa22",
+    "DQAGE_SHA256": "7d06174182a633bc551d00d0eb628982eb894405123724f05be2691a51756ae0",
+    "DQMULT_SHA256": "735ffba8f63d7628a1ad56aab684e263ce291bca151d2e73aa989fcd3dc2a820",
+    "TRUNC_SHA256": "5a191ce112c79a26a06789d878c9688eab253db29fd5411c306e3f882cbce80f",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
