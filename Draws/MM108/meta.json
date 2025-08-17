@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1mrdd9u/entry_thread_108_rain_or_shine_its_school_time/",
+            "length": 3768,
+            "trunc_length": 3695
+        }
+    ],
+    "CID_Filename": "OfficialMM108IDs.txt",
+    "Dateline": 1752706800,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1755446400,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "e3d0d10636b4b4822ec7d9c2b5be5c40638d603340925d44dd77262f23ce502e",
+    "DQAGE_SHA256": "425775192c1bfea0a59e540a6970f4cab014ae74b9c0b8b751dfcb56a77bd30a",
+    "DQMULT_SHA256": "e4638dbb82f92a8219dc9212064f8e11482fb0b50c2853baa81c9290ebe1ee6a",
+    "TRUNC_SHA256": "b0a6744121658ebc2082bb8a04dbd91a5b95288bd360caf16671829b51e9342a",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
