@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1ni1048/entry_thread_109_the_powerball_lottery_may_have/",
+            "length": 4500,
+            "trunc_length": 4427
+        }
+    ],
+    "CID_Filename": "OfficialMM109IDs.txt",
+    "Dateline": 1755385200,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1758124800,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "f6cdf51cb1b2681e2673db36ee8403bf886cc03e39d07f01bb99d3bbb063a27a",
+    "DQAGE_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DQMULT_SHA256": "a6efbffad6c2d1098bdaa1506110f0dae29e2d10972c6933e92a0277a2628335",
+    "TRUNC_SHA256": "352e934fd39be72c05199ffd347625f36fcce767e9a593acc6b6ed33511ebf03",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
