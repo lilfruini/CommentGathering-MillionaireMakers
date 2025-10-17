@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1o7q2c3/entry_thread_110_spooky_season_is_upon_us_as_long/",
+            "length": 6234,
+            "trunc_length": 6130
+        }
+    ],
+    "CID_Filename": "OfficialMM110IDs.txt",
+    "Dateline": 1757977200,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1760716800,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "1d7176783c11de4573c063b1a17dce085baaee6e74db66945343a6a1ae604a76",
+    "DQAGE_SHA256": "9f35f78ada7ae776041c0ad97d2187b18b69418bb8e91f20f44f64fc329ee13a",
+    "DQMULT_SHA256": "1d01b6c2ef6a0930658ec579cd53e8c547a5fd704b1e4ce26c05bc84696455ae",
+    "TRUNC_SHA256": "f77f7ac1686f38806c945fba26590cd1bbca677162a7b61853e8e146e307b274",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
