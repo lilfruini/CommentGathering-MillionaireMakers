@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1oy5kf0/entry_thread_111_with_black_friday_and/",
+            "length": 5211,
+            "trunc_length": 5133
+        }
+    ],
+    "CID_Filename": "OfficialMM111IDs.txt",
+    "Dateline": 1760655600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1763395200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "3dbe2ed9d17b1482c159e406bb33c94f2836387642bcb109c99cb405125ce81c",
+    "DQAGE_SHA256": "9d2e440562f4915988c2690a1e4e2b0865745a84f83af89916060ef804711db4",
+    "DQMULT_SHA256": "cf0d815c40d22657b30b8c6074617cd8bae683a9268e504b7717b95a7a45a563",
+    "TRUNC_SHA256": "d1d06cd33ef9a94b7babe6d403e3c8bb3039b2cdb44bf95b66550fac038e6437",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
