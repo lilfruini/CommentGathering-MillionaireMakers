@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1pnlt5o/entry_thread_112_rmillionairemakers_presents_the/",
+            "length": 8879,
+            "trunc_length": 8719
+        }
+    ],
+    "CID_Filename": "OfficialMM112IDs.txt",
+    "Dateline": 1763247600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1766073600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "219d004afeddeef1a75fbfd0e91f7742ad4adaf503f1a37c6183bd8196cfb844",
+    "DQAGE_SHA256": "0c69a0e8c4a4f91ae020f3adc933f76bf4d6d10652b7185ea6346e152245074a",
+    "DQMULT_SHA256": "80d0e8343db6bc6a8f76c925b6b6b3fbda97fb453c5a1fd74c00edadb89733ad",
+    "TRUNC_SHA256": "54033001fde49dcdd76bbdd682d7f1e482b291afa65721b80fe1a172c5684e77",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
