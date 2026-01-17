@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1qdys9p/entry_thread_113_new_year_new_you_were_making_a/",
+            "length": 6822,
+            "trunc_length": 6747
+        }
+    ],
+    "CID_Filename": "OfficialMM113IDs.txt",
+    "Dateline": 1760655600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1763395200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "0ef7b6183b541489070dee74499a19eb1cc51a9b451c5cea56dec963896701fa",
+    "DQAGE_SHA256": "b485a3e4ef298247bb5a9f1e5bc26860c82d009a61100b7c80f966ff7e041827",
+    "DQMULT_SHA256": "e64bb463855e58b77e99468061467225b0c593c5285de1c86035a79ac6eb4016",
+    "TRUNC_SHA256": "0cebbb7b59d0cb60f969cfbba00b0342d2cfd6a07a66fdc2f8d13802f8696215",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
