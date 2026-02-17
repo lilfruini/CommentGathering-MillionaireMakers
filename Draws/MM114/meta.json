@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1r5suru/entry_thread_114_happy_valentines_day_were/",
+            "length": 4984,
+            "trunc_length": 4933
+        }
+    ],
+    "CID_Filename": "OfficialMM114IDs.txt",
+    "Dateline": 1768604400,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1771344000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "af3a4ce4a4ead3496d0c758d4408d2e9865f3a4b34bedbe333ce739fa32b5847",
+    "DQAGE_SHA256": "01db43677a67f4c06cc457307f5962eee4cf621b223ca2db672959dd27fc2940",
+    "DQMULT_SHA256": "6c420f7d35ae88a02026baa952095222765919418a2adfb2d039002e6244966f",
+    "TRUNC_SHA256": "cd5e1a5c904d7f56d78f419414d8cce20215ecb0f0ca91dab8e452db518e3200",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
