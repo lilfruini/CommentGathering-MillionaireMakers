@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1rusnnb/entry_thread_115_welcome_to_daylight_savings_time/",
+            "length": 5402,
+            "trunc_length": 5354
+        }
+    ],
+    "CID_Filename": "OfficialMM115IDs.txt",
+    "Dateline": 1771023600,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1773763200,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "4a35214626f668c798ae5c5a13f7df7e518f790533fc3f31bcb25e7ded85aae0",
+    "DQAGE_SHA256": "b340bd6c14d6bca97b57eeff3787940ea7be6412c7c06ae376c2ebaf7df8d252",
+    "DQMULT_SHA256": "1e40101bedfd17c27d8b84c0e549c0fc817b39bf6e19d2db1ab9a8ff0467d224",
+    "TRUNC_SHA256": "5868e7d4fe026539cc6ef0532c304bf7d2ac6aacdd9cb9a3971b0892d3998630",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
