@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1smlx0c/entry_thread_116_april_showers_as_soon_as_youre/",
+            "length": 6840,
+            "trunc_length": 6776
+        }
+    ],
+    "CID_Filename": "OfficialMM116IDs.txt",
+    "Dateline": 1773702000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1776441600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "01d170591608f22b0725fa378fe6765611625b3d9f2e8eede04f5ce1044c5666",
+    "DQAGE_SHA256": "a728ea3e113c61a697b91eab6580ea4cb07f791c644cb51a546b12c6a2c267ae",
+    "DQMULT_SHA256": "f187bb4073685e5db2b1610ade7be3b96d877629422ad413b0d89f8fb0b00253",
+    "TRUNC_SHA256": "e407467cf7c35e9520546c13dac52692ba09838ae6bfe1d80659a4054161454a",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
