@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1tec2in/entry_thread_117_bring_may_flowers_its_the/",
+            "length": 4668,
+            "trunc_length": 4633
+        }
+    ],
+    "CID_Filename": "OfficialMM117IDs.txt",
+    "Dateline": 1776294000,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1779033600,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "7a718fc62569648b0653c6408dc97370b2b7b25792a34012386f0d684c610ae8",
+    "DQAGE_SHA256": "7fac6a2f605c59cc4d284593b4b0953503c1d5c0df175e7f4f4c0c4e0cccc0d7",
+    "DQMULT_SHA256": "9b46d5958b7baab849beedb08e0bfc6cc473e8ee4951fa5c9909f63107627caa",
+    "TRUNC_SHA256": "f75db276fc8a7da2264eae256ad3f3a26001bb62c70e2450506f8c6f074e48f7",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
