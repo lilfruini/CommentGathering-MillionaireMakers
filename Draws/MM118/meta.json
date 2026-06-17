@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1u6wb3c/entry_thread_118_its_an_exciting_time_where_the/",
+            "length": 5408,
+            "trunc_length": 5346
+        }
+    ],
+    "CID_Filename": "OfficialMM118IDs.txt",
+    "Dateline": 1778972400,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1781712000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "1d408384c99ae5b25f5957c9aa8b95406f63d717fed3ee4cf263df76b31bf555",
+    "DQAGE_SHA256": "b72539bc27c0b1fdf098b88ffba003daec678164710b2a41775e9a38c6f7d612",
+    "DQMULT_SHA256": "63ada95053512247cd278ec02eee7421bf99272d0182e73b55f71143e750294c",
+    "TRUNC_SHA256": "aba83f3b448636f7f6f52a2f37d6ac8b80ca9a580023568b4d773c98f0af865f",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
