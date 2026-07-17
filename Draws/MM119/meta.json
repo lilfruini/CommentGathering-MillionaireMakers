@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1uxldgs/entry_thread_119_the_stage_is_set_the_crowds_are/",
+            "length": 6687,
+            "trunc_length": 6603
+        }
+    ],
+    "CID_Filename": "OfficialMM119IDs.txt",
+    "Dateline": 1781564400,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1784304000,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "002e426ff99bbdecfb9991609e3f4ba1cdd18c510a15f0d28ceabbc706bd5cb5",
+    "DQAGE_SHA256": "720408b9301fad29f1db5fe0689b5c8894ca339c7078340b0b2ecf522101aeab",
+    "DQMULT_SHA256": "317e7c3d8722576c3477884544cf314b53e28ff883fda71b52bd112cfb504119",
+    "TRUNC_SHA256": "c7f69687f6f584e371f1e39e33439ef303c1967d84caae2b9ca5e4ce7ce32f87",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
