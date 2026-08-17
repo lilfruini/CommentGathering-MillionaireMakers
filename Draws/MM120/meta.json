@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1vpgpp8/entry_thread_120_august_is_here_school_is_around/",
+            "length": 6122,
+            "trunc_length": 6053
+        }
+    ],
+    "CID_Filename": "OfficialMM120IDs.txt",
+    "Dateline": 1784242800,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1786982400,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "bc103e104f7f4f5b56a581113d6a5841a4c8409771453a8c03ca25af88ea8fed",
+    "DQAGE_SHA256": "bb7e23febf878e8ef8d912d82026466018097dc3117c11bfc62782a3c90ababf",
+    "DQMULT_SHA256": "d067d2b43edc5da5653ca2ce3532029cf9e9275014f1721d051b540121c78911",
+    "TRUNC_SHA256": "5afae6515a7713624cd0d5e31c2e0f309a59c049dbe0619f5951b53df11e3257",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
