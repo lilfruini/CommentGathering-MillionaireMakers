@@ -1,0 +1,25 @@
+{
+    "threads": [
+        {
+            "link": "https://old.reddit.com/r/millionairemakers/comments/1wicr78/entry_thread_121_comment_to_enter/",
+            "length": 5790,
+            "trunc_length": 5639
+        }
+    ],
+    "CID_Filename": "OfficialMM121IDs.txt",
+    "Dateline": 1786921200,
+    "Duplicate Action": "DQ",
+    "WinnerFromFile": "Truncated",
+    "DrawTime": 1792252800,
+    "WaitTillBlock": 3,
+    "Win_Hash": "",
+    "CID_SHA256": "840bbda14c9679f8b65a873991792328037c2998b8d576262c5f508459a00f86",
+    "DQAGE_SHA256": "5863c0adabc3b2596626828a03e78f80a8249ba7b2f56cf9ecc254a6a75c5984",
+    "DQMULT_SHA256": "561121fc1d33c4f7df0ab0bad0d60313fc3856e2fe3b0b9436fa4a57450a601b",
+    "TRUNC_SHA256": "a7959a82a7ffe8415757a75f8e670f23e367ba104e3991cfdd8a12fcacc7c61b",
+    "Total Participants": 0,
+    "Winner_Number": 0,
+    "Winner_ID": "",
+    "Winner_Link": "",
+    "Winner": ""
+}
